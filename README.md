@@ -1,12 +1,16 @@
 # Rugby Ball Detector
 
-A YOLOv8-trained object detector for spotting rugby balls in photos, running entirely
-in the browser via ONNX Runtime Web - no server, no upload.
+⚠️ **Experimental.** This is a quick proof of concept, not a polished or maintained tool -
+detection quality is limited by a small (179-image) training set, and the code hasn't had
+much hardening. Expect rough edges.
+
+A YOLOv8-trained object detector for spotting rugby balls in photos and videos, running
+entirely in the browser via ONNX Runtime Web - no server, no upload.
 
 **Live demo: https://davidchatting-bot.github.io/rugby-ball-detector/**
 
-Drop an image onto the page and it'll run the model client-side and draw a box around
-any rugby ball it finds.
+Drop an image or video onto the page and it'll run the model client-side and draw a box
+around any rugby ball it finds.
 
 ## Contents
 
