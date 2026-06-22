@@ -2,7 +2,9 @@
 
 ⚠️ **Experimental.** This is a quick proof of concept, not a polished or maintained tool -
 detection quality is limited by a small (179-image) training set, and the code hasn't had
-much hardening. Expect rough edges.
+much hardening. Expect rough edges. The training images are mostly professional rugby
+photos, which almost exclusively feature **Gilbert** balls (the official supplier for World
+Rugby, Six Nations, etc.) - don't expect this to generalise well to other ball brands.
 
 A YOLOv8-trained object detector for spotting rugby balls in photos and videos, running
 entirely in the browser via ONNX Runtime Web - no server, no upload.
