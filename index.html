@@ -24,8 +24,8 @@
 <body>
   <h1>Rugby Ball Detector</h1>
   <div id="drop-zone">
-    <p>Drop an image here or click to select</p>
-    <input type="file" id="file-input" accept="image/*">
+    <p>Drop an image or video here or click to select</p>
+    <input type="file" id="file-input" accept="image/*,video/*">
   </div>
   <div id="status">Loading model...</div>
   <div id="canvas-container">
@@ -80,7 +80,7 @@
       return { tensor, scale, padX, padY };
     }
 
-    function parseOutput(output, scale, padX, padY, imgW, imgH) {
+    function parseOutput(output, scale, padX, padY) {
       // YOLOv8 output: [1, 5, 8400] — 5 = cx, cy, w, h, conf
       const data = output.data;
       const numBoxes = output.dims[2];
@@ -131,26 +131,16 @@
       return inter / (areaA + areaB - inter);
     }
 
-    async function runDetection(file) {
-      if (!session) return setStatus('Model not loaded yet');
-
-      const img = await loadImage(file);
-      const canvas = document.getElementById('canvas');
-      canvas.width = img.width;
-      canvas.height = img.height;
-      canvas.style.display = 'block';
-      const ctx = canvas.getContext('2d');
-      ctx.drawImage(img, 0, 0);
-
-      setStatus('Running detection...');
-
-      const { tensor, scale, padX, padY } = preprocess(img);
+    //Shared by both the image and video paths: run inference on whatever's currently drawn
+    //into `ctx` (an image, or one video frame) and draw the resulting boxes on top of it.
+    async function detectAndDraw(source, ctx) {
+      const { tensor, scale, padX, padY } = preprocess(source);
       const inputTensor = new ort.Tensor('float32', tensor, [1, 3, IMG_SIZE, IMG_SIZE]);
       const feeds = { [session.inputNames[0]]: inputTensor };
       const results = await session.run(feeds);
       const output = results[session.outputNames[0]];
 
-      const detections = parseOutput(output, scale, padX, padY, img.width, img.height);
+      const detections = parseOutput(output, scale, padX, padY);
 
       detections.forEach(d => {
         ctx.strokeStyle = '#00ff88';
@@ -161,7 +151,25 @@
         ctx.fillText(`rugby_ball ${(d.conf * 100).toFixed(0)}%`, d.x1, d.y1 - 6);
       });
 
-      setStatus(`Detected ${detections.length} ball${detections.length !== 1 ? 's' : ''}`);
+      return detections.length;
+    }
+
+    async function runImageDetection(file) {
+      if (!session) return setStatus('Model not loaded yet');
+
+      stopVideo();  //in case a video was already running
+
+      const img = await loadImage(file);
+      const canvas = document.getElementById('canvas');
+      canvas.width = img.width;
+      canvas.height = img.height;
+      canvas.style.display = 'block';
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(img, 0, 0);
+
+      setStatus('Running detection...');
+      const count = await detectAndDraw(img, ctx);
+      setStatus(`Detected ${count} ball${count !== 1 ? 's' : ''}`);
     }
 
     function loadImage(file) {
@@ -172,18 +180,91 @@
       });
     }
 
+    //Video is processed frame-by-frame, not played in real time: requestVideoFrameCallback
+    //fires once per frame the browser actually decodes, we pause immediately, run detection
+    //on exactly that frame, draw it, and only then arm the next callback and play() just long
+    //enough to decode the next frame. The video can't advance until the current frame's
+    //detection and drawing are completely finished. Loops back to the start at the end.
+    let videoEl = null;
+
+    function stopVideo() {
+      if (videoEl) {
+        videoEl.pause();
+        videoEl.src = '';
+        videoEl = null;
+      }
+    }
+
+    function runVideoDetection(file) {
+      if (!session) return setStatus('Model not loaded yet');
+
+      stopVideo();
+      videoEl = document.createElement('video');
+      videoEl.muted = true;
+      videoEl.playsInline = true;
+      videoEl.src = URL.createObjectURL(file);
+
+      videoEl.addEventListener('loadeddata', function onLoaded() {
+        videoEl.removeEventListener('loadeddata', onLoaded);
+        //video.width/height (used by preprocess) reflect HTML attributes, not the decoded
+        //frame size, so they need setting explicitly from videoWidth/videoHeight.
+        videoEl.width = videoEl.videoWidth;
+        videoEl.height = videoEl.videoHeight;
+        armNextVideoFrame();
+        videoEl.play().catch(() => {});  //play() can be interrupted by the next frame's pause() - harmless, ignore
+      }, { once: true });
+
+      videoEl.addEventListener('ended', () => {
+        if (!videoEl) return;
+        videoEl.currentTime = 0;
+        armNextVideoFrame();
+        videoEl.play().catch(() => {});  //play() can be interrupted by the next frame's pause() - harmless, ignore
+      });
+    }
+
+    function armNextVideoFrame() {
+      if (videoEl) videoEl.requestVideoFrameCallback(onVideoFrame);
+    }
+
+    async function onVideoFrame() {
+      if (!videoEl) return;
+      videoEl.pause();
+
+      const canvas = document.getElementById('canvas');
+      canvas.width = videoEl.width;
+      canvas.height = videoEl.height;
+      canvas.style.display = 'block';
+      const ctx = canvas.getContext('2d');
+      ctx.drawImage(videoEl, 0, 0);
+
+      setStatus('Running detection...');
+      const count = await detectAndDraw(videoEl, ctx);
+      setStatus(`Detected ${count} ball${count !== 1 ? 's' : ''} (video)`);
+
+      armNextVideoFrame();
+      if (videoEl) videoEl.play().catch(() => {});  //play() can be interrupted by the next frame's pause() - harmless, ignore
+    }
+
+    function handleFile(file) {
+      if (file.type.startsWith('video/')) {
+        runVideoDetection(file);
+      } else {
+        runImageDetection(file);
+      }
+    }
+
     // Events
     const dropZone = document.getElementById('drop-zone');
     const fileInput = document.getElementById('file-input');
 
     dropZone.addEventListener('click', () => fileInput.click());
-    fileInput.addEventListener('change', e => { if (e.target.files[0]) runDetection(e.target.files[0]); });
+    fileInput.addEventListener('change', e => { if (e.target.files[0]) handleFile(e.target.files[0]); });
     dropZone.addEventListener('dragover', e => { e.preventDefault(); dropZone.classList.add('drag-over'); });
     dropZone.addEventListener('dragleave', () => dropZone.classList.remove('drag-over'));
     dropZone.addEventListener('drop', e => {
       e.preventDefault();
       dropZone.classList.remove('drag-over');
-      if (e.dataTransfer.files[0]) runDetection(e.dataTransfer.files[0]);
+      if (e.dataTransfer.files[0]) handleFile(e.dataTransfer.files[0]);
     });
 
     loadModel();
