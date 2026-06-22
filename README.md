@@ -10,7 +10,7 @@ any rugby ball it finds.
 
 ## Contents
 
-- `rugby-detector.html` - the browser demo (loads `best.onnx` and runs inference with `onnxruntime-web`)
+- `index.html` - the browser demo (loads `best.onnx` and runs inference with `onnxruntime-web`)
 - `best.onnx` / `best.pt` - the trained model weights (ONNX and PyTorch formats)
 - `CREDITS.md` - source links for the Wikimedia Commons images used to train the model
 
