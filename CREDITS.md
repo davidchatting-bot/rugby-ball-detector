@@ -9,8 +9,8 @@ parentheses) with hyphens, so a reconstructed guess can easily 404.
 Each row below has been checked against the Wikimedia Commons API (last checked
 2026-08-18): where a working file was found, the row is a direct link showing its
 real title; where it's still unresolved, the row shows the reconstructed filename
-as plain text plus a link to search Commons for it. As of the last check, 139 of
-179 are resolved to a real file and 40 are still just a search link.
+as plain text plus a link to search Commons for it. As of the last check, 142 of
+179 are resolved to a real file and 37 are still just a search link.
 
 | Filename |
 |---|
@@ -155,7 +155,7 @@ as plain text plus a link to search Commons for it. As of the last check, 139 of
 | ST_vs_LOU_espoirs_2013_-72-.JPG ([search](https://commons.wikimedia.org/w/index.php?search=ST%20vs%20LOU%20espoirs%202013%20-72-&title=Special:MediaSearch)) |
 | ST_vs_LOU_espoirs_2013_-73-.JPG ([search](https://commons.wikimedia.org/w/index.php?search=ST%20vs%20LOU%20espoirs%202013%20-73-&title=Special:MediaSearch)) |
 | [ST vs MHR - 2012-11-09 - 06.jpg](https://commons.wikimedia.org/wiki/File:ST_vs_MHR_-_2012-11-09_-_06.jpg) |
-| ST_vs_RCT_-_December_2011_-_Se-bastien_Bruno.jpg ([search](https://commons.wikimedia.org/w/index.php?search=ST%20vs%20RCT%20-%20December%202011%20-%20Se-bastien%20Bruno&title=Special:MediaSearch)) |
+| [ST vs RCT - December 2011 - Sébastien Bruno.jpg](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_-_December_2011_-_S%C3%A9bastien_Bruno.jpg) |
 | [ST vs RCT 2012 12 03011.JPG](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_03011.JPG) |
 | [ST vs RCT 2012 12 03024.JPG](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_03024.JPG) |
 | [ST vs RCT 2012 12 03030.JPG](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_03030.JPG) |
@@ -164,8 +164,8 @@ as plain text plus a link to search Commons for it. As of the last check, 139 of
 | [ST vs RCT 2012 12 03034.JPG](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_03034.JPG) |
 | [ST vs RCT 2012 12 Florian Fritz.jpg](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Florian_Fritz.jpg) |
 | [ST vs RCT 2012 12 Jonny Wilkinson kicking a penalty (cropped).jpg](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Jonny_Wilkinson_kicking_a_penalty_%28cropped%29.jpg) |
-| ST_vs_RCT_2012_12_Maxime_Me-dard_4.jpg ([search](https://commons.wikimedia.org/w/index.php?search=ST%20vs%20RCT%202012%2012%20Maxime%20Me-dard%204&title=Special:MediaSearch)) |
-| ST_vs_RCT_2012_12_Wilkinson_-_Gau-ze-re.JPG ([search](https://commons.wikimedia.org/w/index.php?search=ST%20vs%20RCT%202012%2012%20Wilkinson%20-%20Gau-ze-re&title=Special:MediaSearch)) |
+| [ST vs RCT 2012 12 Maxime Médard 4.jpg](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Maxime_M%C3%A9dard_4.jpg) |
+| [ST vs RCT 2012 12 Wilkinson & Gaüzère.JPG](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Wilkinson_%26_Ga%C3%BCz%C3%A8re.JPG) |
 | [ST vs RM92 - 2012-11-01 - Juan Martin Hernandez.jpg](https://commons.wikimedia.org/wiki/File:ST_vs_RM92_-_2012-11-01_-_Juan_Martin_Hernandez.jpg) |
 | [ST vs SUA - 2012-02-18 - Warm up - 15.jpg](https://commons.wikimedia.org/wiki/File:ST_vs_SUA_-_2012-02-18_-_Warm_up_-_15.jpg) |
 | [Simmons2.jpg](https://commons.wikimedia.org/wiki/File:Simmons2.jpg) |
