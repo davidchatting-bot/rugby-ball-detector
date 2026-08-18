@@ -9,8 +9,8 @@ parentheses) with hyphens, so a reconstructed guess can easily 404.
 Each row below has been checked against the Wikimedia Commons API (last checked
 2026-08-18): where a working file was found, the row is a direct link showing its
 real title; where it's still unresolved, the row shows the reconstructed filename
-as plain text plus a link to search Commons for it. As of the last check, 173 of
-179 are resolved to a real file and 6 are still just a search link.
+as plain text plus a link to search Commons for it. As of the last check, 174 of
+179 are resolved to a real file and 5 are still just a search link.
 
 | Filename |
 |---|
@@ -63,7 +63,7 @@ as plain text plus a link to search Commons for it. As of the last check, 173 of
 | [Daniel William Carter 2018b.jpg](https://commons.wikimedia.org/wiki/File:Daniel_William_Carter_2018b.jpg) |
 | [Dégagement Doussain ST Racing 2011.jpg](https://commons.wikimedia.org/wiki/File:D%C3%A9gagement_Doussain_ST_Racing_2011.jpg) |
 | [December 1, 2012 Stade toulousain vs ASM Morgan Parra kicking.jpg](https://commons.wikimedia.org/wiki/File:December_1%2C_2012_Stade_toulousain_vs_ASM_Morgan_Parra_kicking.jpg) |
-| DuncanPaia-aua2023-cropped-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=DuncanPaia-aua2023-cropped-&title=Special:MediaSearch)) |
+| [DuncanPaia'aua2023(cropped).jpg](https://commons.wikimedia.org/wiki/File:DuncanPaia%27aua2023%28cropped%29.jpg) |
 | [Ellisalde Novès ST vs USAP 2011.jpg](https://commons.wikimedia.org/wiki/File:Ellisalde_Nov%C3%A8s_ST_vs_USAP_2011.jpg) |
 | [Entrenamiento Los Pumas (7686673666).jpg](https://commons.wikimedia.org/wiki/File:Entrenamiento_Los_Pumas_(7686673666).jpg) |
 | [Erdocio MHR.jpg](https://commons.wikimedia.org/wiki/File:Erdocio_MHR.jpg) |
