@@ -9,8 +9,8 @@ parentheses) with hyphens, so a reconstructed guess can easily 404.
 Each row below has been checked against the Wikimedia Commons API (last checked
 2026-08-18): where a working file was found, the row is a direct link showing its
 real title; where it's still unresolved, the row shows the reconstructed filename
-as plain text plus a link to search Commons for it. As of the last check, 135 of
-179 are resolved to a real file and 44 are still just a search link.
+as plain text plus a link to search Commons for it. As of the last check, 138 of
+179 are resolved to a real file and 41 are still just a search link.
 
 | Filename |
 |---|
@@ -113,9 +113,9 @@ as plain text plus a link to search Commons for it. As of the last check, 135 of
 | Jordan_Mislov.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Jordan%20Mislov&title=Special:MediaSearch)) |
 | [Josh rugby.jpg](https://commons.wikimedia.org/wiki/File:Josh_rugby.jpg) |
 | [Juan Jose Imhoff Racing Metro training 2012-03-13.jpg](https://commons.wikimedia.org/wiki/File:Juan_Jose_Imhoff_Racing_Metro_training_2012-03-13.jpg) |
-| July_22-_2011_Florian_Fritz_pass.jpg ([search](https://commons.wikimedia.org/w/index.php?search=July%2022-%202011%20Florian%20Fritz%20pass&title=Special:MediaSearch)) |
-| July_22-_2011_Florian_Fritz_try.jpg ([search](https://commons.wikimedia.org/w/index.php?search=July%2022-%202011%20Florian%20Fritz%20try&title=Special:MediaSearch)) |
-| July_22-_2011_Fritz_and_Stade_toulousain_ball.jpg ([search](https://commons.wikimedia.org/w/index.php?search=July%2022-%202011%20Fritz%20and%20Stade%20toulousain%20ball&title=Special:MediaSearch)) |
+| [July 22, 2011 Florian Fritz pass.jpg](https://commons.wikimedia.org/wiki/File:July_22%2C_2011_Florian_Fritz_pass.jpg) |
+| [July 22, 2011 Florian Fritz try.jpg](https://commons.wikimedia.org/wiki/File:July_22%2C_2011_Florian_Fritz_try.jpg) |
+| [July 22, 2011 Fritz and Stade toulousain ball.jpg](https://commons.wikimedia.org/wiki/File:July_22%2C_2011_Fritz_and_Stade_toulousain_ball.jpg) |
 | [Kick off by Luke McAlister 2.jpg](https://commons.wikimedia.org/wiki/File:Kick_off_by_Luke_McAlister_2.jpg) |
 | [Kuzumitatsuya20230218.jpg](https://commons.wikimedia.org/wiki/File:Kuzumitatsuya20230218.jpg) |
 | [Lamboley catches the ball in line-out.jpg](https://commons.wikimedia.org/wiki/File:Lamboley_catches_the_ball_in_line-out.jpg) |
