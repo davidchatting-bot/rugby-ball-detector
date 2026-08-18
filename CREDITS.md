@@ -14,7 +14,7 @@ as plain text plus a link to search Commons for it. As of the last check, 131 of
 
 | Filename |
 |---|
-| [- Lyon olympique universitaire vs. Stade français, 8th August 2014.jpg](https://commons.wikimedia.org/wiki/File:-_Lyon_olympique_universitaire_vs._Stade_fran%C3%A7ais%2C_8th_August_2014.jpg) |
+| [- Lyon olympique universitaire vs. Stade français, 8th August 2014 (24).jpg](https://commons.wikimedia.org/wiki/File:-_Lyon_olympique_universitaire_vs._Stade_fran%C3%A7ais%2C_8th_August_2014_%2824%29.jpg) |
 | [2014 W6N - France vs Italy - Christelle Le Duff 5780-2.jpg](https://commons.wikimedia.org/wiki/File:2014_W6N_-_France_vs_Italy_-_Christelle_Le_Duff_5780-2.jpg) |
 | [2014 W6N - France vs Italy - Christelle Le Duff 5780.jpg](https://commons.wikimedia.org/wiki/File:2014_W6N_-_France_vs_Italy_-_Christelle_Le_Duff_5780.jpg) |
 | [2014 W6N - France vs Italy - Christelle Le Duff 5925.jpg](https://commons.wikimedia.org/wiki/File:2014_W6N_-_France_vs_Italy_-_Christelle_Le_Duff_5925.jpg) |
