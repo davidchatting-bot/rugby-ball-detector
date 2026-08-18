@@ -9,8 +9,8 @@ parentheses) with hyphens, so a reconstructed guess can easily 404.
 Each row below has been checked against the Wikimedia Commons API (last checked
 2026-08-18): where a working file was found, the row is a direct link showing its
 real title; where it's still unresolved, the row shows the reconstructed filename
-as plain text plus a link to search Commons for it. As of the last check, 131 of
-179 are resolved to a real file and 48 are still just a search link.
+as plain text plus a link to search Commons for it. As of the last check, 135 of
+179 are resolved to a real file and 44 are still just a search link.
 
 | Filename |
 |---|
@@ -54,10 +54,10 @@ as plain text plus a link to search Commons for it. As of the last check, 131 of
 | Byron_Kelleher_try_ST-Toulousain-biarritz_olympique_07092008.JPG ([search](https://commons.wikimedia.org/w/index.php?search=Byron%20Kelleher%20try%20ST-Toulousain-biarritz%20olympique%2007092008&title=Special:MediaSearch)) |
 | [Camille Lopez 2020.jpg](https://commons.wikimedia.org/wiki/File:Camille_Lopez_2020.jpg) |
 | Capuozzo_Italia_2022_-cropped-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Capuozzo%20Italia%202022%20-cropped-&title=Special:MediaSearch)) |
-| Cle-ment_Poitrenaud_11_08_2011.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Cle-ment%20Poitrenaud%2011%2008%202011&title=Special:MediaSearch)) |
-| Cle-ment_Poitrenaud_11_aout_2011_2.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Cle-ment%20Poitrenaud%2011%20aout%202011%202&title=Special:MediaSearch)) |
-| Cle-ment_Poitrenaud_2020.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Cle-ment%20Poitrenaud%202020&title=Special:MediaSearch)) |
-| Cle-ment_Poitrenaud_facing_left.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Cle-ment%20Poitrenaud%20facing%20left&title=Special:MediaSearch)) |
+| [Clément Poitrenaud 11 08 2011.jpg](https://commons.wikimedia.org/wiki/File:Cl%C3%A9ment_Poitrenaud_11_08_2011.jpg) |
+| [Clément Poitrenaud 11 aout 2011 2.jpg](https://commons.wikimedia.org/wiki/File:Cl%C3%A9ment_Poitrenaud_11_aout_2011_2.jpg) |
+| [Clément Poitrenaud 2020.jpg](https://commons.wikimedia.org/wiki/File:Cl%C3%A9ment_Poitrenaud_2020.jpg) |
+| [Clément Poitrenaud facing left.jpg](https://commons.wikimedia.org/wiki/File:Cl%C3%A9ment_Poitrenaud_facing_left.jpg) |
 | [Course Jauzion.jpg](https://commons.wikimedia.org/wiki/File:Course_Jauzion.jpg) |
 | [Daigo Hashimoto.jpg](https://commons.wikimedia.org/wiki/File:Daigo_Hashimoto.jpg) |
 | [Daniel William Carter 2018b.jpg](https://commons.wikimedia.org/wiki/File:Daniel_William_Carter_2018b.jpg) |
