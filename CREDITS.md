@@ -1,17 +1,16 @@
 # Training Image Credits
 
-This dataset's images were sourced from Wikimedia Commons. Filenames below started
-out reconstructed from the original Commons filenames preserved (with a
-Roboflow-added hash suffix) in `dataset/{train,valid,test}/images/`. Roboflow's
-export process replaces special characters (apostrophes, accented letters,
-parentheses) with hyphens, so a reconstructed guess can easily 404.
+These are the files used to train this dataset's rugby-ball detector, sourced
+from Wikimedia Commons. Each link below goes straight to the file's Commons
+page, where its specific Creative Commons license, author, and other
+attribution details are listed - checked against the Wikimedia Commons API
+(last checked 2026-08-18) to confirm every link resolves to the real file.
 
-Each row below has been checked against the Wikimedia Commons API (last checked
-2026-08-18) and is a direct link to its real title on Commons. All 178 resolved
-rows are listed; `Libbok_in_2023.jpg` from the original 179-image dataset export
-couldn't be traced to a real Commons file (search turned up nothing) and was
-dropped from this list rather than left as a dead guess - the image itself is
-still present in `dataset/`, it's just untraceable to a licensed source here.
+`Libbok_in_2023.jpg` from the original 179-image dataset export is the one
+exception: it couldn't be traced to a real Commons file (search turned up
+nothing), so it's omitted here rather than left as a dead guess. The image
+itself is still present in `dataset/`, it's just untraceable to a licensed
+source in this list.
 
 | Filename |
 |---|
