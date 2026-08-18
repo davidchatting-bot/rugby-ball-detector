@@ -9,8 +9,8 @@ parentheses) with hyphens, so a reconstructed guess can easily 404.
 Each row below has been checked against the Wikimedia Commons API (last checked
 2026-08-18): where a working file was found, the row is a direct link showing its
 real title; where it's still unresolved, the row shows the reconstructed filename
-as plain text plus a link to search Commons for it. As of the last check, 142 of
-179 are resolved to a real file and 37 are still just a search link.
+as plain text plus a link to search Commons for it. As of the last check, 144 of
+179 are resolved to a real file and 35 are still just a search link.
 
 | Filename |
 |---|
@@ -152,8 +152,8 @@ as plain text plus a link to search Commons for it. As of the last check, 142 of
 | [ST vs CO 2012 5093.JPG](https://commons.wikimedia.org/wiki/File:ST_vs_CO_2012_5093.JPG) |
 | [ST vs CO 2012 5108.JPG](https://commons.wikimedia.org/wiki/File:ST_vs_CO_2012_5108.JPG) |
 | [ST vs CO 2012 5125.JPG](https://commons.wikimedia.org/wiki/File:ST_vs_CO_2012_5125.JPG) |
-| ST_vs_LOU_espoirs_2013_-72-.JPG ([search](https://commons.wikimedia.org/w/index.php?search=ST%20vs%20LOU%20espoirs%202013%20-72-&title=Special:MediaSearch)) |
-| ST_vs_LOU_espoirs_2013_-73-.JPG ([search](https://commons.wikimedia.org/w/index.php?search=ST%20vs%20LOU%20espoirs%202013%20-73-&title=Special:MediaSearch)) |
+| [ST vs LOU espoirs 2013 (72).JPG](https://commons.wikimedia.org/wiki/File:ST_vs_LOU_espoirs_2013_(72).JPG) |
+| [ST vs LOU espoirs 2013 (73).JPG](https://commons.wikimedia.org/wiki/File:ST_vs_LOU_espoirs_2013_(73).JPG) |
 | [ST vs MHR - 2012-11-09 - 06.jpg](https://commons.wikimedia.org/wiki/File:ST_vs_MHR_-_2012-11-09_-_06.jpg) |
 | [ST vs RCT - December 2011 - Sébastien Bruno.jpg](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_-_December_2011_-_S%C3%A9bastien_Bruno.jpg) |
 | [ST vs RCT 2012 12 03011.JPG](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_03011.JPG) |
