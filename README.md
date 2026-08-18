@@ -1,7 +1,9 @@
 # Rugby Ball Detector
 
+![Grid of rugby ball crops from the training data](balls_grid.jpg)
+
 ⚠️ **Experimental.** This is a quick proof of concept, not a polished or maintained tool -
-detection quality is limited by a small (179-image) training set, and the code hasn't had
+detection quality is limited by a small (178-image) training set, and the code hasn't had
 much hardening. Expect rough edges. The training images are mostly professional rugby
 photos, which almost exclusively feature **Gilbert** balls (the official supplier for World
 Rugby, Six Nations, etc.) - don't expect this to generalise well to other ball brands.
@@ -25,9 +27,8 @@ around any rugby ball it finds.
   match a label to its source), plus `classes.txt` (`rugby_ball` = class `0`)
 
 The training images themselves aren't included in this repo (see `.gitignore`) - it's a
-local-only YOLOv8 export from Roboflow, 179 images, one class (`rugby_ball`). `training.txt`
-and `labels/` cover 178 of those; one image couldn't be traced back to a real Commons file,
-so it's omitted from both.
+local-only YOLOv8 export from Roboflow, 178 images, one class (`rugby_ball`), fully covered
+by `training.txt` and `labels/`.
 
 ## Using the labels
 
