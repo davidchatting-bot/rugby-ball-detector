@@ -20,6 +20,8 @@ around any rugby ball it finds.
 
 - `index.html` - the browser demo (loads `best.onnx` and runs inference with `onnxruntime-web`)
 - `best.onnx` / `best.pt` - the trained model weights (ONNX and PyTorch formats)
+- [`p5-test/`](p5-test/) - a p5.js-based test harness for the same model: loads a fixed
+  training-set image by default, and lets you drag another image onto the canvas to try it
 - [`dataset/`](dataset/) - the training data: every image's Wikimedia Commons URL and ball
   location(s) as `dataset.json`, plus `export_yolo.py` to turn that into a YOLO-ready
   directory. See [`dataset/README.md`](dataset/README.md) for the JSON schema and how to
