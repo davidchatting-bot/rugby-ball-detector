@@ -9,8 +9,8 @@ parentheses) with hyphens, so a reconstructed guess can easily 404.
 Each row below has been checked against the Wikimedia Commons API (last checked
 2026-08-18): where a working file was found, the row is a direct link showing its
 real title; where it's still unresolved, the row shows the reconstructed filename
-as plain text plus a link to search Commons for it. As of the last check, 138 of
-179 are resolved to a real file and 41 are still just a search link.
+as plain text plus a link to search Commons for it. As of the last check, 139 of
+179 are resolved to a real file and 40 are still just a search link.
 
 | Filename |
 |---|
@@ -163,7 +163,7 @@ as plain text plus a link to search Commons for it. As of the last check, 138 of
 | [ST vs RCT 2012 12 03033.JPG](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_03033.JPG) |
 | [ST vs RCT 2012 12 03034.JPG](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_03034.JPG) |
 | [ST vs RCT 2012 12 Florian Fritz.jpg](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Florian_Fritz.jpg) |
-| ST_vs_RCT_2012_12_Jonny_Wilkinson_kicking_a_penalty_-cropped-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=ST%20vs%20RCT%202012%2012%20Jonny%20Wilkinson%20kicking%20a%20penalty%20-cropped-&title=Special:MediaSearch)) |
+| [ST vs RCT 2012 12 Jonny Wilkinson kicking a penalty (cropped).jpg](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Jonny_Wilkinson_kicking_a_penalty_%28cropped%29.jpg) |
 | ST_vs_RCT_2012_12_Maxime_Me-dard_4.jpg ([search](https://commons.wikimedia.org/w/index.php?search=ST%20vs%20RCT%202012%2012%20Maxime%20Me-dard%204&title=Special:MediaSearch)) |
 | ST_vs_RCT_2012_12_Wilkinson_-_Gau-ze-re.JPG ([search](https://commons.wikimedia.org/w/index.php?search=ST%20vs%20RCT%202012%2012%20Wilkinson%20-%20Gau-ze-re&title=Special:MediaSearch)) |
 | [ST vs RM92 - 2012-11-01 - Juan Martin Hernandez.jpg](https://commons.wikimedia.org/wiki/File:ST_vs_RM92_-_2012-11-01_-_Juan_Martin_Hernandez.jpg) |
