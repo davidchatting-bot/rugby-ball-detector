@@ -18,7 +18,8 @@ around any rugby ball it finds.
 
 - `index.html` - the browser demo (loads `best.onnx` and runs inference with `onnxruntime-web`)
 - `best.onnx` / `best.pt` - the trained model weights (ONNX and PyTorch formats)
-- `CREDITS.md` - source links for the Wikimedia Commons images used to train the model
+- [`training.txt`](training.txt) - every training image with a direct link to its Wikimedia Commons
+  page; each page lists that image's specific Creative Commons license and author
 
 The training dataset itself isn't included in this repo (see `.gitignore`) - it's a
 local-only YOLOv8 export from Roboflow, 179 images, one class (`rugby_ball`).
