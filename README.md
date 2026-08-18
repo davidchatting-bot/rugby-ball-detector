@@ -2,21 +2,17 @@
 
 <!-- screenshot.png is regenerated from the live demo by .github/workflows/build.yml on every
      push to master - don't hand-edit it, it'll just get overwritten. -->
-![Screenshot of the demo detecting a rugby ball](screenshot.png)
+[![Screenshot of the demo detecting a rugby ball](screenshot.png)](https://davidchatting-bot.github.io/rugby-ball-detector/)
+*[Try the live demo →](https://davidchatting-bot.github.io/rugby-ball-detector/)* - loads a
+test image by default, or drag your own image or video onto the canvas.
 
-⚠️ **Experimental.** This is a quick proof of concept, not a polished or maintained tool -
-detection quality is limited by a small (178-image) training set, and the code hasn't had
-much hardening. Expect rough edges. The training images are mostly professional rugby
-photos, which almost exclusively feature **Gilbert** balls (the official supplier for World
-Rugby, Six Nations, etc.) - don't expect this to generalise well to other ball brands.
+A small YOLOv8 model for spotting rugby balls in photos and video, running entirely in the
+browser (no server, no upload) via ONNX Runtime Web and p5.js. It's a quick side project
+rather than a polished tool, trained on a small set of images, so expect some rough edges.
 
-A YOLOv8-trained object detector for spotting rugby balls in photos, running entirely in the
-browser via ONNX Runtime Web (p5.js for the canvas/UI) - no server, no upload.
-
-**Live demo: https://davidchatting-bot.github.io/rugby-ball-detector/**
-
-Loads a fixed test image from the training set by default; drag another image onto the
-canvas to try it instead.
+The training photos are mostly professional shots, which almost exclusively feature
+**Gilbert** balls (the official supplier for World Rugby, Six Nations, etc.) - don't expect
+this to generalise well to other ball brands.
 
 ## Contents
 
