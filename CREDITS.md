@@ -7,10 +7,11 @@ export process replaces special characters (apostrophes, accented letters,
 parentheses) with hyphens, so a reconstructed guess can easily 404.
 
 Each row below has been checked against the Wikimedia Commons API (last checked
-2026-08-18): where a working file was found, the row is a direct link showing its
-real title; where it's still unresolved, the row shows the reconstructed filename
-as plain text plus a link to search Commons for it. As of the last check, 178 of
-179 are resolved to a real file and 1 is still just a search link.
+2026-08-18) and is a direct link to its real title on Commons. All 178 resolved
+rows are listed; `Libbok_in_2023.jpg` from the original 179-image dataset export
+couldn't be traced to a real Commons file (search turned up nothing) and was
+dropped from this list rather than left as a dead guess - the image itself is
+still present in `dataset/`, it's just untraceable to a licensed source here.
 
 | Filename |
 |---|
@@ -119,7 +120,6 @@ as plain text plus a link to search Commons for it. As of the last check, 178 of
 | [Kick off by Luke McAlister 2.jpg](https://commons.wikimedia.org/wiki/File:Kick_off_by_Luke_McAlister_2.jpg) |
 | [Kuzumitatsuya20230218.jpg](https://commons.wikimedia.org/wiki/File:Kuzumitatsuya20230218.jpg) |
 | [Lamboley catches the ball in line-out.jpg](https://commons.wikimedia.org/wiki/File:Lamboley_catches_the_ball_in_line-out.jpg) |
-| Libbok_in_2023.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Libbok%20in%202023&title=Special:MediaSearch)) |
 | [Line up Lions Bulls.jpg](https://commons.wikimedia.org/wiki/File:Line_up_Lions_Bulls.jpg) |
 | [Lionel Beauxis looking left.jpg](https://commons.wikimedia.org/wiki/File:Lionel_Beauxis_looking_left.jpg) |
 | [Magassa Mamadou rugby mlsgp 10.jpg](https://commons.wikimedia.org/wiki/File:Magassa_Mamadou_rugby_mlsgp_10.jpg) |
