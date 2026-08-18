@@ -26,8 +26,8 @@ around any rugby ball it finds.
 
 The training images themselves aren't included in this repo (see `.gitignore`) - it's a
 local-only YOLOv8 export from Roboflow, 179 images, one class (`rugby_ball`). `training.txt`
-and `labels/` cover 178 of those - one image (`Libbok_in_2023.jpg`) couldn't be traced back
-to a real Commons file, so it's omitted from both.
+and `labels/` cover 178 of those; one image couldn't be traced back to a real Commons file,
+so it's omitted from both.
 
 ## Using the labels
 
