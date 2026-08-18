@@ -10,8 +10,8 @@ body {
   flex-direction: column;
   align-items: center;
   font-family: sans-serif;
-  background: #111;
-  color: #eee;
+  background: #fff;
+  color: #000;
 }
 
 main {
