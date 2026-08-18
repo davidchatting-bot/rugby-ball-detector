@@ -20,26 +20,30 @@ around any rugby ball it finds.
 
 - `index.html` - the browser demo (loads `best.onnx` and runs inference with `onnxruntime-web`)
 - `best.onnx` / `best.pt` - the trained model weights (ONNX and PyTorch formats)
-- [`training.txt`](training.txt) - Wikimedia Commons URL for every training image, one per line;
-  each page lists that image's specific Creative Commons license and author
-- [`labels/`](labels/) - where the ball is in every training image, in YOLO format; one `.txt`
-  file per image, named after its Commons file title (decode the URL in `training.txt` to
-  match a label to its source), plus `classes.txt` (`rugby_ball` = class `0`)
+- [`training.txt`](training.txt) - Wikimedia Commons URL for every train+valid image (the 158
+  actually fit to the model), one per line; each page lists that image's specific Creative
+  Commons license and author
+- [`test.txt`](test.txt) - same, for the 20 held-out test images used to evaluate the model.
+  No overlap with `training.txt`.
+- [`labels/`](labels/) / [`labels-test/`](labels-test/) - where the ball is in each image, in
+  YOLO format, split to match `training.txt`/`test.txt`; one `.txt` file per image, named
+  after its Commons file title (decode the URL to match a label to its source), plus each
+  folder's own `classes.txt` (`rugby_ball` = class `0`)
 
 The training images themselves aren't included in this repo (see `.gitignore`) - it's a
-local-only YOLOv8 export from Roboflow, 178 images, one class (`rugby_ball`), fully covered
-by `training.txt` and `labels/`.
+local-only YOLOv8 export from Roboflow, 178 images (158 train+valid, 20 test), one class
+(`rugby_ball`), fully covered between `training.txt`/`labels/` and `test.txt`/`labels-test/`.
 
 ## Using the labels
 
-Each line in a `labels/*.txt` file is one annotated ball, `class` followed by normalized
-(0-1) coordinates - but the coordinate format isn't consistent across the dataset, because
-Roboflow preserved however each ball was originally annotated:
+Each line in a `labels/*.txt` or `labels-test/*.txt` file is one annotated ball, `class`
+followed by normalized (0-1) coordinates - but the coordinate format isn't consistent across
+the dataset, because Roboflow preserved however each ball was originally annotated:
 
-- **83 lines** are a plain box: `class x_center y_center width height`
-- **125 lines** (in 97 of the 178 files) are a polygon outline instead: `class x1 y1 x2 y2 ...`
-  (an even number of coordinates, one vertex per pair, tracing the ball's outline rather than
-  a box around it)
+- **83 lines** (72 train+valid, 11 test) are a plain box: `class x_center y_center width height`
+- **125 lines** (110 train+valid in 87 files, 15 test in 10 files) are a polygon outline
+  instead: `class x1 y1 x2 y2 ...` (an even number of coordinates, one vertex per pair, tracing
+  the ball's outline rather than a box around it)
 
 Ultralytics' own training pipeline (used to produce `best.pt` / `best.onnx`) handles both
 automatically, converting a polygon to its enclosing box when training a detector. If you're
