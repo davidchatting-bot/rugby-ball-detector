@@ -9,8 +9,8 @@ parentheses) with hyphens, so a reconstructed guess can easily 404.
 Each row below has been checked against the Wikimedia Commons API (last checked
 2026-08-18): where a working file was found, the row is a direct link showing its
 real title; where it's still unresolved, the row shows the reconstructed filename
-as plain text plus a link to search Commons for it. As of the last check, 175 of
-179 are resolved to a real file and 4 are still just a search link.
+as plain text plus a link to search Commons for it. As of the last check, 176 of
+179 are resolved to a real file and 3 are still just a search link.
 
 | Filename |
 |---|
@@ -98,7 +98,7 @@ as plain text plus a link to search Commons for it. As of the last check, 175 of
 | [HarlequinsvExeter2020.jpg](https://commons.wikimedia.org/wiki/File:HarlequinsvExeter2020.jpg) |
 | [Head of Stade toulousain.jpg](https://commons.wikimedia.org/wiki/File:Head_of_Stade_toulousain.jpg) |
 | [Helene Ezanno.jpg](https://commons.wikimedia.org/wiki/File:Helene_Ezanno.jpg) |
-| International_franc-ais_Marc_Andreu.jpg ([search](https://commons.wikimedia.org/w/index.php?search=International%20franc-ais%20Marc%20Andreu&title=Special:MediaSearch)) |
+| [International français Marc Andreu.jpg](https://commons.wikimedia.org/wiki/File:International_fran%C3%A7ais_Marc_Andreu.jpg) |
 | [Italia vs All Blacks-3-2 (32324034638).jpg](https://commons.wikimedia.org/wiki/File:Italia_vs_All_Blacks-3-2_(32324034638).jpg) |
 | [Jacques Cronjé applatit.jpg](https://commons.wikimedia.org/wiki/File:Jacques_Cronj%C3%A9_applatit.jpg) |
 | [Jacques Cronjé essai.jpg](https://commons.wikimedia.org/wiki/File:Jacques_Cronj%C3%A9_essai.jpg) |
