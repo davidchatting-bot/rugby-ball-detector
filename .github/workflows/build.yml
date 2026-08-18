@@ -1,0 +1,46 @@
+name: Build
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  screenshot:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: master
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Regenerate screenshot.png from the live demo
+        run: |
+          npm install --no-save playwright@1.47.0
+          npx playwright install --with-deps chromium
+
+          python3 -m http.server 8099 &
+          SERVER_PID=$!
+          timeout 30 bash -c 'until curl -sf http://localhost:8099/ >/dev/null; do sleep 1; done'
+
+          node .github/workflows/screenshot.js http://localhost:8099/
+
+          kill $SERVER_PID
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add screenshot.png
+          if git diff --cached --quiet; then
+            echo "No changes"
+            exit 0
+          fi
+          git commit -m "Regenerate screenshot.png from the live demo"
+          git push

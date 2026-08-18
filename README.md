@@ -1,6 +1,8 @@
 # Rugby Ball Detector
 
-![Grid of rugby ball crops from the training data](balls_grid.jpg)
+<!-- screenshot.png is regenerated from the live demo by .github/workflows/build.yml on every
+     push to master - don't hand-edit it, it'll just get overwritten. -->
+![Screenshot of the demo detecting a rugby ball](screenshot.png)
 
 ⚠️ **Experimental.** This is a quick proof of concept, not a polished or maintained tool -
 detection quality is limited by a small (178-image) training set, and the code hasn't had
@@ -21,6 +23,9 @@ canvas to try it instead.
 - `index.html` / `style.css` / `sketch.js` - the browser demo (p5.js UI, `best.onnx` run with
   `onnxruntime-web`)
 - `best.onnx` / `best.pt` - the trained model weights (ONNX and PyTorch formats)
+- `screenshot.png` - a screenshot of the live demo, regenerated on every push by
+  [`.github/workflows/build.yml`](.github/workflows/build.yml) (headless Chromium via
+  Playwright, see [`screenshot.js`](.github/workflows/screenshot.js))
 - [`dataset/`](dataset/) - the training data: every image's Wikimedia Commons URL and ball
   location(s) as `dataset.json`, plus `export_yolo.py` to turn that into a YOLO-ready
   directory. See [`dataset/README.md`](dataset/README.md) for the JSON schema and how to
