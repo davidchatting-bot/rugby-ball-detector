@@ -8,20 +8,19 @@ much hardening. Expect rough edges. The training images are mostly professional 
 photos, which almost exclusively feature **Gilbert** balls (the official supplier for World
 Rugby, Six Nations, etc.) - don't expect this to generalise well to other ball brands.
 
-A YOLOv8-trained object detector for spotting rugby balls in photos and videos, running
-entirely in the browser via ONNX Runtime Web - no server, no upload.
+A YOLOv8-trained object detector for spotting rugby balls in photos, running entirely in the
+browser via ONNX Runtime Web (p5.js for the canvas/UI) - no server, no upload.
 
 **Live demo: https://davidchatting-bot.github.io/rugby-ball-detector/**
 
-Drop an image or video onto the page and it'll run the model client-side and draw a box
-around any rugby ball it finds.
+Loads a fixed test image from the training set by default; drag another image onto the
+canvas to try it instead.
 
 ## Contents
 
-- `index.html` - the browser demo (loads `best.onnx` and runs inference with `onnxruntime-web`)
+- `index.html` / `style.css` / `sketch.js` - the browser demo (p5.js UI, `best.onnx` run with
+  `onnxruntime-web`)
 - `best.onnx` / `best.pt` - the trained model weights (ONNX and PyTorch formats)
-- [`p5-test/`](p5-test/) - a p5.js-based test harness for the same model: loads a fixed
-  training-set image by default, and lets you drag another image onto the canvas to try it
 - [`dataset/`](dataset/) - the training data: every image's Wikimedia Commons URL and ball
   location(s) as `dataset.json`, plus `export_yolo.py` to turn that into a YOLO-ready
   directory. See [`dataset/README.md`](dataset/README.md) for the JSON schema and how to

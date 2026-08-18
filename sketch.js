@@ -1,22 +1,24 @@
-// p5.js test harness for the rugby ball detector. Loads best.onnx directly with
-// onnxruntime-web (same model I/O contract as ../index.html) and uses p5 for the
-// canvas, drawing, and drag-and-drop handling.
+// p5.js-based demo for the rugby ball detector. Loads best.onnx directly with
+// onnxruntime-web and uses p5 for the canvas, drawing, and drag-and-drop handling.
 
-const MODEL_URL = '../best.onnx';
+const MODEL_URL = 'best.onnx';
 const IMG_SIZE = 640;
-const CONF_THRESHOLD = 0.05;
 
-// World Rugby Championship U20s - Day 4-69 (18906552742).jpg, from the training set's
-// "valid" split - see ../dataset/dataset.json
+// 0.25 (Ultralytics' own default prediction threshold) cleanly isolates the single true
+// detection on the default test image below: 91% confidence vs. a 6% false positive.
+const CONF_THRESHOLD = 0.25;
+
+// ST vs RCT 2012 12 Wilkinson & Gaüzère.JPG, from the training set's "test" split - see
+// dataset/dataset.json
 //
 // Loaded from upload.wikimedia.org directly (not the commons.wikimedia.org/Special:FilePath
 // redirect) because a crossOrigin='anonymous' image load requires an
 // Access-Control-Allow-Origin header on every hop of the redirect chain, and Commons' own
 // redirect responses don't send one - only the final upload.wikimedia.org response does.
 const DEFAULT_IMAGE_URL =
-  'https://upload.wikimedia.org/wikipedia/commons/d/df/World_Rugby_Championship_U20s_-_Day_4-69_%2818906552742%29.jpg';
+  'https://upload.wikimedia.org/wikipedia/commons/c/c7/ST_vs_RCT_2012_12_Wilkinson_%26_Ga%C3%BCz%C3%A8re.JPG';
 const DEFAULT_IMAGE_CREDIT_URL =
-  'https://commons.wikimedia.org/wiki/File:World_Rugby_Championship_U20s_-_Day_4-69_(18906552742).jpg';
+  'https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Wilkinson_%26_Ga%C3%BCz%C3%A8re.JPG';
 
 let session = null;
 let currentImg = null; // native HTMLImageElement currently displayed
