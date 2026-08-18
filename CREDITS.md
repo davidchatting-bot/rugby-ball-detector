@@ -9,8 +9,8 @@ parentheses) with hyphens, so a reconstructed guess can easily 404.
 Each row below has been checked against the Wikimedia Commons API (last checked
 2026-08-18): where a working file was found, the row is a direct link showing its
 real title; where it's still unresolved, the row shows the reconstructed filename
-as plain text plus a link to search Commons for it. As of the last check, 177 of
-179 are resolved to a real file and 2 are still just a search link.
+as plain text plus a link to search Commons for it. As of the last check, 178 of
+179 are resolved to a real file and 1 is still just a search link.
 
 | Filename |
 |---|
@@ -174,7 +174,7 @@ as plain text plus a link to search Commons for it. As of the last check, 177 of
 | [Stade toulousain vs Racing Metro 2012 1445.JPG](https://commons.wikimedia.org/wiki/File:Stade_toulousain_vs_Racing_Metro_2012_1445.JPG) |
 | [TAKEZAWA Masayoshi 210425c.jpg](https://commons.wikimedia.org/wiki/File:TAKEZAWA_Masayoshi_210425c.jpg) |
 | [Tata Zebre perfil.jpg](https://commons.wikimedia.org/wiki/File:Tata_Zebre_perfil.jpg) |
-| Thomas_Castaigne-de_cropped.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Thomas%20Castaigne-de%20cropped&title=Special:MediaSearch)) |
+| [Thomas Castaignède cropped.jpg](https://commons.wikimedia.org/wiki/File:Thomas_Castaign%C3%A8de_cropped.jpg) |
 | [Thomas Ramos 2016-10-30.jpg](https://commons.wikimedia.org/wiki/File:Thomas_Ramos_2016-10-30.jpg) |
 | [Timoci Matanavu looking right and passing the ball.jpg](https://commons.wikimedia.org/wiki/File:Timoci_Matanavu_looking_right_and_passing_the_ball.jpg) |
 | [U20 6Nations Summer Series Day 5 Match 1- Francia vs Sudafrica-65 (52200358610).jpg](https://commons.wikimedia.org/wiki/File:U20_6Nations_Summer_Series_Day_5_Match_1-_Francia_vs_Sudafrica-65_(52200358610).jpg) |
