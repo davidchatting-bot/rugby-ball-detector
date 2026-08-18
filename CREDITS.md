@@ -9,8 +9,8 @@ parentheses) with hyphens, so a reconstructed guess can easily 404.
 Each row below has been checked against the Wikimedia Commons API (last checked
 2026-08-18): where a working file was found, the row is a direct link showing its
 real title; where it's still unresolved, the row shows the reconstructed filename
-as plain text plus a link to search Commons for it. As of the last check, 146 of
-179 are resolved to a real file and 33 are still just a search link.
+as plain text plus a link to search Commons for it. As of the last check, 164 of
+179 are resolved to a real file and 15 are still just a search link.
 
 | Filename |
 |---|
@@ -35,25 +35,25 @@ as plain text plus a link to search Commons for it. As of the last check, 146 of
 | [Akshata Murty hosts rugby lessons at No.10 Downing Street on 22 September 2023 07.jpg](https://commons.wikimedia.org/wiki/File:Akshata_Murty_hosts_rugby_lessons_at_No.10_Downing_Street_on_22_September_2023_07.jpg) |
 | [Alexander Yanyushkin cropped.jpg](https://commons.wikimedia.org/wiki/File:Alexander_Yanyushkin_cropped.jpg) |
 | [AntoineDupontWax2023.jpg](https://commons.wikimedia.org/wiki/File:AntoineDupontWax2023.jpg) |
-| AntoineDupont_ItaliaFrancia6N2023_2-cropped-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=AntoineDupont%20ItaliaFrancia6N2023%202-cropped-&title=Special:MediaSearch)) |
+| [AntoineDupont ItaliaFrancia6N2023 2(cropped).jpg](https://commons.wikimedia.org/wiki/File:AntoineDupont_ItaliaFrancia6N2023_2%28cropped%29.jpg) |
 | [Autumn Nations Series- Italia vs All Blacks-632 (51667214208).jpg](https://commons.wikimedia.org/wiki/File:Autumn_Nations_Series-_Italia_vs_All_Blacks-632_(51667214208).jpg) |
 | [Axel Despérès.jpg](https://commons.wikimedia.org/wiki/File:Axel_Desp%C3%A9r%C3%A8s.jpg) |
 | BKT_URC_23-24-_Zebre_Parma_vs_Edinburgh_Rugby-64-Migliorato-NR_-53538627347-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=BKT%20URC%2023-24-%20Zebre%20Parma%20vs%20Edinburgh%20Rugby-64-Migliorato-NR%20-53538627347-&title=Special:MediaSearch)) |
 | [Ballon RWC 2023.jpg](https://commons.wikimedia.org/wiki/File:Ballon_RWC_2023.jpg) |
 | [Ballon rugby Stade toulousain mains.JPG](https://commons.wikimedia.org/wiki/File:Ballon_rugby_Stade_toulousain_mains.JPG) |
 | [Beauxis 11 08 2011.jpg](https://commons.wikimedia.org/wiki/File:Beauxis_11_08_2011.jpg) |
-| Beauxis_E-lissalde_Doussain.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Beauxis%20E-lissalde%20Doussain&title=Special:MediaSearch)) |
-| Beauxis_E-lissalde_Doussain_aout_2011.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Beauxis%20E-lissalde%20Doussain%20aout%202011&title=Special:MediaSearch)) |
+| [Beauxis Élissalde Doussain.jpg](https://commons.wikimedia.org/wiki/File:Beauxis_%C3%89lissalde_Doussain.jpg) |
+| [Beauxis Élissalde Doussain aout 2011.jpg](https://commons.wikimedia.org/wiki/File:Beauxis_%C3%89lissalde_Doussain_aout_2011.jpg) |
 | [Beauxis pass to Matanavu.jpg](https://commons.wikimedia.org/wiki/File:Beauxis_pass_to_Matanavu.jpg) |
-| Benjami-n_Urdapilleta_-2-_2023-11-18.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Benjami-n%20Urdapilleta%20-2-%202023-11-18&title=Special:MediaSearch)) |
-| Benjami-n_Urdapilleta_2023-11-18.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Benjami-n%20Urdapilleta%202023-11-18&title=Special:MediaSearch)) |
-| Benoi-t_Baby_ouverture.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Benoi-t%20Baby%20ouverture&title=Special:MediaSearch)) |
+| [Benjamín Urdapilleta (2) 2023-11-18.jpg](https://commons.wikimedia.org/wiki/File:Benjam%C3%ADn_Urdapilleta_(2)_2023-11-18.jpg) |
+| [Benjamín Urdapilleta 2023-11-18.jpg](https://commons.wikimedia.org/wiki/File:Benjam%C3%ADn_Urdapilleta_2023-11-18.jpg) |
+| [Benoît Baby ouverture.jpg](https://commons.wikimedia.org/wiki/File:Beno%C3%AEt_Baby_ouverture.jpg) |
 | [Boyet Penality.JPG](https://commons.wikimedia.org/wiki/File:Boyet_Penality.JPG) |
 | [Brock James9.jpg](https://commons.wikimedia.org/wiki/File:Brock_James9.jpg) |
 | [ByronKelleher.jpg](https://commons.wikimedia.org/wiki/File:ByronKelleher.jpg) |
 | Byron_Kelleher_try_ST-Toulousain-biarritz_olympique_07092008.JPG ([search](https://commons.wikimedia.org/w/index.php?search=Byron%20Kelleher%20try%20ST-Toulousain-biarritz%20olympique%2007092008&title=Special:MediaSearch)) |
 | [Camille Lopez 2020.jpg](https://commons.wikimedia.org/wiki/File:Camille_Lopez_2020.jpg) |
-| Capuozzo_Italia_2022_-cropped-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Capuozzo%20Italia%202022%20-cropped-&title=Special:MediaSearch)) |
+| [Capuozzo Italia 2022 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Capuozzo_Italia_2022_(cropped).jpg) |
 | [Clément Poitrenaud 11 08 2011.jpg](https://commons.wikimedia.org/wiki/File:Cl%C3%A9ment_Poitrenaud_11_08_2011.jpg) |
 | [Clément Poitrenaud 11 aout 2011 2.jpg](https://commons.wikimedia.org/wiki/File:Cl%C3%A9ment_Poitrenaud_11_aout_2011_2.jpg) |
 | [Clément Poitrenaud 2020.jpg](https://commons.wikimedia.org/wiki/File:Cl%C3%A9ment_Poitrenaud_2020.jpg) |
@@ -61,11 +61,11 @@ as plain text plus a link to search Commons for it. As of the last check, 146 of
 | [Course Jauzion.jpg](https://commons.wikimedia.org/wiki/File:Course_Jauzion.jpg) |
 | [Daigo Hashimoto.jpg](https://commons.wikimedia.org/wiki/File:Daigo_Hashimoto.jpg) |
 | [Daniel William Carter 2018b.jpg](https://commons.wikimedia.org/wiki/File:Daniel_William_Carter_2018b.jpg) |
-| De-gagement_Doussain_ST_Racing_2011.jpg ([search](https://commons.wikimedia.org/w/index.php?search=De-gagement%20Doussain%20ST%20Racing%202011&title=Special:MediaSearch)) |
-| December_1-_2012_Stade_toulousain_vs_ASM_Morgan_Parra_kicking.jpg ([search](https://commons.wikimedia.org/w/index.php?search=December%201-%202012%20Stade%20toulousain%20vs%20ASM%20Morgan%20Parra%20kicking&title=Special:MediaSearch)) |
+| [Dégagement Doussain ST Racing 2011.jpg](https://commons.wikimedia.org/wiki/File:D%C3%A9gagement_Doussain_ST_Racing_2011.jpg) |
+| [December 1, 2012 Stade toulousain vs ASM Morgan Parra kicking.jpg](https://commons.wikimedia.org/wiki/File:December_1%2C_2012_Stade_toulousain_vs_ASM_Morgan_Parra_kicking.jpg) |
 | DuncanPaia-aua2023-cropped-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=DuncanPaia-aua2023-cropped-&title=Special:MediaSearch)) |
 | [Ellisalde Novès ST vs USAP 2011.jpg](https://commons.wikimedia.org/wiki/File:Ellisalde_Nov%C3%A8s_ST_vs_USAP_2011.jpg) |
-| Entrenamiento_Los_Pumas_-7686673666-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Entrenamiento%20Los%20Pumas%20-7686673666-&title=Special:MediaSearch)) |
+| [Entrenamiento Los Pumas (7686673666).jpg](https://commons.wikimedia.org/wiki/File:Entrenamiento_Los_Pumas_(7686673666).jpg) |
 | [Erdocio MHR.jpg](https://commons.wikimedia.org/wiki/File:Erdocio_MHR.jpg) |
 | [European Rugby Champions Cup 24-25- RC Toulonnais vs Stade Toulousain-128-Migliorato-NR (54468572477).jpg](https://commons.wikimedia.org/wiki/File:European_Rugby_Champions_Cup_24-25-_RC_Toulonnais_vs_Stade_Toulousain-128-Migliorato-NR_(54468572477).jpg) |
 | [European Rugby Champions Cup 24-25- RC Toulonnais vs Stade Toulousain-330-Migliorato-NR (54469417731).jpg](https://commons.wikimedia.org/wiki/File:European_Rugby_Champions_Cup_24-25-_RC_Toulonnais_vs_Stade_Toulousain-330-Migliorato-NR_(54469417731).jpg) |
@@ -99,18 +99,18 @@ as plain text plus a link to search Commons for it. As of the last check, 146 of
 | [Head of Stade toulousain.jpg](https://commons.wikimedia.org/wiki/File:Head_of_Stade_toulousain.jpg) |
 | [Helene Ezanno.jpg](https://commons.wikimedia.org/wiki/File:Helene_Ezanno.jpg) |
 | International_franc-ais_Marc_Andreu.jpg ([search](https://commons.wikimedia.org/w/index.php?search=International%20franc-ais%20Marc%20Andreu&title=Special:MediaSearch)) |
-| Italia_vs_All_Blacks-3-2_-32324034638-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Italia%20vs%20All%20Blacks-3-2%20-32324034638-&title=Special:MediaSearch)) |
+| [Italia vs All Blacks-3-2 (32324034638).jpg](https://commons.wikimedia.org/wiki/File:Italia_vs_All_Blacks-3-2_(32324034638).jpg) |
 | [Jacques Cronjé applatit.jpg](https://commons.wikimedia.org/wiki/File:Jacques_Cronj%C3%A9_applatit.jpg) |
 | [Jacques Cronjé essai.jpg](https://commons.wikimedia.org/wiki/File:Jacques_Cronj%C3%A9_essai.jpg) |
 | [Jacques Cronjé part essai.jpg](https://commons.wikimedia.org/wiki/File:Jacques_Cronj%C3%A9_part_essai.jpg) |
 | [Jacques Cronjé stadium.jpg](https://commons.wikimedia.org/wiki/File:Jacques_Cronj%C3%A9_stadium.jpg) |
 | [Jan Machacek rugby 2002.jpg](https://commons.wikimedia.org/wiki/File:Jan_Machacek_rugby_2002.jpg) |
-| Jan_Machacek_rugby_2002_-cropped-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Jan%20Machacek%20rugby%202002%20-cropped-&title=Special:MediaSearch)) |
+| [Jan Machacek rugby 2002 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Jan_Machacek_rugby_2002_(cropped).jpg) |
 | Jauzion_Fritz_Be-zy_David.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Jauzion%20Fritz%20Be-zy%20David&title=Special:MediaSearch)) |
 | Jauzion_Fritz_E-lissalde_Beauxis.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Jauzion%20Fritz%20E-lissalde%20Beauxis&title=Special:MediaSearch)) |
 | Jean-Marc_Doussain_looking_right_and_Nicolas_Be-zy_facing_left.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Jean-Marc%20Doussain%20looking%20right%20and%20Nicolas%20Be-zy%20facing%20left&title=Special:MediaSearch)) |
 | [Jean-Marc Doussain passing the ball.jpg](https://commons.wikimedia.org/wiki/File:Jean-Marc_Doussain_passing_the_ball.jpg) |
-| Jordan_Mislov.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Jordan%20Mislov&title=Special:MediaSearch)) |
+| [Jordan Mislov.png](https://commons.wikimedia.org/wiki/File:Jordan_Mislov.png) |
 | [Josh rugby.jpg](https://commons.wikimedia.org/wiki/File:Josh_rugby.jpg) |
 | [Juan Jose Imhoff Racing Metro training 2012-03-13.jpg](https://commons.wikimedia.org/wiki/File:Juan_Jose_Imhoff_Racing_Metro_training_2012-03-13.jpg) |
 | [July 22, 2011 Florian Fritz pass.jpg](https://commons.wikimedia.org/wiki/File:July_22%2C_2011_Florian_Fritz_pass.jpg) |
@@ -125,7 +125,7 @@ as plain text plus a link to search Commons for it. As of the last check, 146 of
 | [Magassa Mamadou rugby mlsgp 10.jpg](https://commons.wikimedia.org/wiki/File:Magassa_Mamadou_rugby_mlsgp_10.jpg) |
 | [Magassa Mamadou rugby mlsgp 61.jpg](https://commons.wikimedia.org/wiki/File:Magassa_Mamadou_rugby_mlsgp_61.jpg) |
 | [Magassa Mamadou rugby mlsgp 8.jpg](https://commons.wikimedia.org/wiki/File:Magassa_Mamadou_rugby_mlsgp_8.jpg) |
-| Matt_Giteau_1_-cropped-.JPG ([search](https://commons.wikimedia.org/w/index.php?search=Matt%20Giteau%201%20-cropped-&title=Special:MediaSearch)) |
+| [Matt Giteau 1 (cropped).JPG](https://commons.wikimedia.org/wiki/File:Matt_Giteau_1_(cropped).JPG) |
 | [McAlister ST Racing 2011.jpg](https://commons.wikimedia.org/wiki/File:McAlister_ST_Racing_2011.jpg) |
 | [Mike Prendergast.jpg](https://commons.wikimedia.org/wiki/File:Mike_Prendergast.jpg) |
 | [Morgan Parra Penalty 01.jpg](https://commons.wikimedia.org/wiki/File:Morgan_Parra_Penalty_01.jpg) |
@@ -134,12 +134,12 @@ as plain text plus a link to search Commons for it. As of the last check, 146 of
 | Nicolas_Be-zy_ballons_facing_left.jpeg ([search](https://commons.wikimedia.org/w/index.php?search=Nicolas%20Be-zy%20ballons%20facing%20left&title=Special:MediaSearch)) |
 | Nicolas_Be-zy_passe_ST_vs_UBB.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Nicolas%20Be-zy%20passe%20ST%20vs%20UBB&title=Special:MediaSearch)) |
 | [Nowell-jack.jpg](https://commons.wikimedia.org/wiki/File:Nowell-jack.jpg) |
-| Pe-nalite-_Luke_McAlister.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Pe-nalite-%20Luke%20McAlister&title=Special:MediaSearch)) |
+| [Pénalité Luke McAlister.jpg](https://commons.wikimedia.org/wiki/File:P%C3%A9nalit%C3%A9_Luke_McAlister.jpg) |
 | Poitrenaud_Be-zy.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Poitrenaud%20Be-zy&title=Special:MediaSearch)) |
-| Racing_Me-tro_92_Jonathan_Wisniewski.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Racing%20Me-tro%2092%20Jonathan%20Wisniewski&title=Special:MediaSearch)) |
+| [Racing Métro 92 Jonathan Wisniewski.jpg](https://commons.wikimedia.org/wiki/File:Racing_M%C3%A9tro_92_Jonathan_Wisniewski.jpg) |
 | [Raphael Ibanez.jpg](https://commons.wikimedia.org/wiki/File:Raphael_Ibanez.jpg) |
 | [Remy Martin.jpg](https://commons.wikimedia.org/wiki/File:Remy_Martin.jpg) |
-| Rugby_-40729565582-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Rugby%20-40729565582-&title=Special:MediaSearch)) |
+| [Rugby (40729565582).jpg](https://commons.wikimedia.org/wiki/File:Rugby_(40729565582).jpg) |
 | [ST vs Agen 2012 36.JPG](https://commons.wikimedia.org/wiki/File:ST_vs_Agen_2012_36.JPG) |
 | [ST vs Agen 2012 43.JPG](https://commons.wikimedia.org/wiki/File:ST_vs_Agen_2012_43.JPG) |
 | [ST vs Agen 2012 56.JPG](https://commons.wikimedia.org/wiki/File:ST_vs_Agen_2012_56.JPG) |
@@ -189,7 +189,7 @@ as plain text plus a link to search Commons for it. As of the last check, 146 of
 | [World Rugby U20 Championship 2025 Day 4-549 (54663147111).jpg](https://commons.wikimedia.org/wiki/File:World_Rugby_U20_Championship_2025_Day_4-549_(54663147111).jpg) |
 | [Yann David Facing the viewer and looking right.jpg](https://commons.wikimedia.org/wiki/File:Yann_David_Facing_the_viewer_and_looking_right.jpg) |
 | [Yann David catching the ball.jpg](https://commons.wikimedia.org/wiki/File:Yann_David_catching_the_ball.jpg) |
-| Yannick_Jauzion_-_Stade_Toulousain_-_Agen.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Yannick%20Jauzion%20-%20Stade%20Toulousain%20-%20Agen&title=Special:MediaSearch)) |
+| [Yannick Jauzion - Stade Toulousain – Agen.jpg](https://commons.wikimedia.org/wiki/File:Yannick_Jauzion_-_Stade_Toulousain_%E2%80%93_Agen.jpg) |
 | [Yannick Jauzion ballon.jpg](https://commons.wikimedia.org/wiki/File:Yannick_Jauzion_ballon.jpg) |
 | [Yannick Jauzion looking right before pass.jpg](https://commons.wikimedia.org/wiki/File:Yannick_Jauzion_looking_right_before_pass.jpg) |
 | [Yohan Montès.jpeg](https://commons.wikimedia.org/wiki/File:Yohan_Mont%C3%A8s.jpeg) |
