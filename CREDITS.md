@@ -9,8 +9,8 @@ parentheses) with hyphens, so a reconstructed guess can easily 404.
 Each row below has been checked against the Wikimedia Commons API (last checked
 2026-08-18): where a working file was found, the row is a direct link showing its
 real title; where it's still unresolved, the row shows the reconstructed filename
-as plain text plus a link to search Commons for it. As of the last check, 174 of
-179 are resolved to a real file and 5 are still just a search link.
+as plain text plus a link to search Commons for it. As of the last check, 175 of
+179 are resolved to a real file and 4 are still just a search link.
 
 | Filename |
 |---|
@@ -73,7 +73,7 @@ as plain text plus a link to search Commons for it. As of the last check, 174 of
 | [European Rugby Champions Cup 24-25- RC Toulonnais vs Stade Toulousain-38-Migliorato-NR (54469674613).jpg](https://commons.wikimedia.org/wiki/File:European_Rugby_Champions_Cup_24-25-_RC_Toulonnais_vs_Stade_Toulousain-38-Migliorato-NR_(54469674613).jpg) |
 | [European Rugby Champions Cup 24-25- RC Toulonnais vs Stade Toulousain-408-Migliorato-NR (54469773930).jpg](https://commons.wikimedia.org/wiki/File:European_Rugby_Champions_Cup_24-25-_RC_Toulonnais_vs_Stade_Toulousain-408-Migliorato-NR_(54469773930).jpg) |
 | [European Rugby Champions Cup 24-25- RC Toulonnais vs Stade Toulousain-545-Migliorato-NR (54468584262).jpg](https://commons.wikimedia.org/wiki/File:European_Rugby_Champions_Cup_24-25-_RC_Toulonnais_vs_Stade_Toulousain-545-Migliorato-NR_(54468584262).jpg) |
-| Exp-small-259527_-4133713411-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Exp-small-259527%20-4133713411-&title=Special:MediaSearch)) |
+| [Exp-small-259527 (4133713411).jpg](https://commons.wikimedia.org/wiki/File:Exp-small-259527_%284133713411%29.jpg) |
 | [Florian Fritz 22 07 2011.jpg](https://commons.wikimedia.org/wiki/File:Florian_Fritz_22_07_2011.jpg) |
 | [Florin Vlaicu Penalty 2017.jpg](https://commons.wikimedia.org/wiki/File:Florin_Vlaicu_Penalty_2017.jpg) |
 | [Florin Vlaicu prepares for a penalty kick 2017.jpg](https://commons.wikimedia.org/wiki/File:Florin_Vlaicu_prepares_for_a_penalty_kick_2017.jpg) |
