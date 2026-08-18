@@ -9,8 +9,8 @@ parentheses) with hyphens, so a reconstructed guess can easily 404.
 Each row below has been checked against the Wikimedia Commons API (last checked
 2026-08-18): where a working file was found, the row is a direct link showing its
 real title; where it's still unresolved, the row shows the reconstructed filename
-as plain text plus a link to search Commons for it. As of the last check, 176 of
-179 are resolved to a real file and 3 are still just a search link.
+as plain text plus a link to search Commons for it. As of the last check, 177 of
+179 are resolved to a real file and 2 are still just a search link.
 
 | Filename |
 |---|
@@ -107,7 +107,7 @@ as plain text plus a link to search Commons for it. As of the last check, 176 of
 | [Jan Machacek rugby 2002.jpg](https://commons.wikimedia.org/wiki/File:Jan_Machacek_rugby_2002.jpg) |
 | [Jan Machacek rugby 2002 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Jan_Machacek_rugby_2002_(cropped).jpg) |
 | [Jauzion Fritz Bézy David.jpg](https://commons.wikimedia.org/wiki/File:Jauzion_Fritz_B%C3%A9zy_David.jpg) |
-| Jauzion_Fritz_E-lissalde_Beauxis.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Jauzion%20Fritz%20E-lissalde%20Beauxis&title=Special:MediaSearch)) |
+| [Jauzion Fritz Élissalde Beauxis.jpg](https://commons.wikimedia.org/wiki/File:Jauzion_Fritz_%C3%89lissalde_Beauxis.jpg) |
 | [Jean-Marc Doussain looking right and Nicolas Bézy facing left.jpg](https://commons.wikimedia.org/wiki/File:Jean-Marc_Doussain_looking_right_and_Nicolas_B%C3%A9zy_facing_left.jpg) |
 | [Jean-Marc Doussain passing the ball.jpg](https://commons.wikimedia.org/wiki/File:Jean-Marc_Doussain_passing_the_ball.jpg) |
 | [Jordan Mislov.png](https://commons.wikimedia.org/wiki/File:Jordan_Mislov.png) |
