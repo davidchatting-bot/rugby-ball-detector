@@ -9,8 +9,8 @@ parentheses) with hyphens, so a reconstructed guess can easily 404.
 Each row below has been checked against the Wikimedia Commons API (last checked
 2026-08-18): where a working file was found, the row is a direct link showing its
 real title; where it's still unresolved, the row shows the reconstructed filename
-as plain text plus a link to search Commons for it. As of the last check, 144 of
-179 are resolved to a real file and 35 are still just a search link.
+as plain text plus a link to search Commons for it. As of the last check, 146 of
+179 are resolved to a real file and 33 are still just a search link.
 
 | Filename |
 |---|
@@ -185,8 +185,8 @@ as plain text plus a link to search Commons for it. As of the last check, 144 of
 | [World Rugby Championship U20s - Day 3-315 (18201106393).jpg](https://commons.wikimedia.org/wiki/File:World_Rugby_Championship_U20s_-_Day_3-315_(18201106393).jpg) |
 | [World Rugby Championship U20s - Day 4-69 (18906552742).jpg](https://commons.wikimedia.org/wiki/File:World_Rugby_Championship_U20s_-_Day_4-69_(18906552742).jpg) |
 | [World Rugby Championship U20s - Day 5-672 (19059437826).jpg](https://commons.wikimedia.org/wiki/File:World_Rugby_Championship_U20s_-_Day_5-672_(19059437826).jpg) |
-| World_Rugby_U20_Championship_2025_Day_4-420_-54663377264-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=World%20Rugby%20U20%20Championship%202025%20Day%204-420%20-54663377264-&title=Special:MediaSearch)) |
-| World_Rugby_U20_Championship_2025_Day_4-549_-54663147111-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=World%20Rugby%20U20%20Championship%202025%20Day%204-549%20-54663147111-&title=Special:MediaSearch)) |
+| [World Rugby U20 Championship 2025 Day 4-420 (54663377264).jpg](https://commons.wikimedia.org/wiki/File:World_Rugby_U20_Championship_2025_Day_4-420_(54663377264).jpg) |
+| [World Rugby U20 Championship 2025 Day 4-549 (54663147111).jpg](https://commons.wikimedia.org/wiki/File:World_Rugby_U20_Championship_2025_Day_4-549_(54663147111).jpg) |
 | [Yann David Facing the viewer and looking right.jpg](https://commons.wikimedia.org/wiki/File:Yann_David_Facing_the_viewer_and_looking_right.jpg) |
 | [Yann David catching the ball.jpg](https://commons.wikimedia.org/wiki/File:Yann_David_catching_the_ball.jpg) |
 | Yannick_Jauzion_-_Stade_Toulousain_-_Agen.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Yannick%20Jauzion%20-%20Stade%20Toulousain%20-%20Agen&title=Special:MediaSearch)) |
