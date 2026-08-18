@@ -9,8 +9,8 @@ parentheses) with hyphens, so a reconstructed guess can easily 404.
 Each row below has been checked against the Wikimedia Commons API (last checked
 2026-08-18): where a working file was found, the row is a direct link showing its
 real title; where it's still unresolved, the row shows the reconstructed filename
-as plain text plus a link to search Commons for it. As of the last check, 172 of
-179 are resolved to a real file and 7 are still just a search link.
+as plain text plus a link to search Commons for it. As of the last check, 173 of
+179 are resolved to a real file and 6 are still just a search link.
 
 | Filename |
 |---|
@@ -38,7 +38,7 @@ as plain text plus a link to search Commons for it. As of the last check, 172 of
 | [AntoineDupont ItaliaFrancia6N2023 2(cropped).jpg](https://commons.wikimedia.org/wiki/File:AntoineDupont_ItaliaFrancia6N2023_2%28cropped%29.jpg) |
 | [Autumn Nations Series- Italia vs All Blacks-632 (51667214208).jpg](https://commons.wikimedia.org/wiki/File:Autumn_Nations_Series-_Italia_vs_All_Blacks-632_(51667214208).jpg) |
 | [Axel Despérès.jpg](https://commons.wikimedia.org/wiki/File:Axel_Desp%C3%A9r%C3%A8s.jpg) |
-| BKT_URC_23-24-_Zebre_Parma_vs_Edinburgh_Rugby-64-Migliorato-NR_-53538627347-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=BKT%20URC%2023-24-%20Zebre%20Parma%20vs%20Edinburgh%20Rugby-64-Migliorato-NR%20-53538627347-&title=Special:MediaSearch)) |
+| [BKT URC 23-24- Zebre Parma vs Edinburgh Rugby-64-Migliorato-NR (53538627347).jpg](https://commons.wikimedia.org/wiki/File:BKT_URC_23-24-_Zebre_Parma_vs_Edinburgh_Rugby-64-Migliorato-NR_%2853538627347%29.jpg) |
 | [Ballon RWC 2023.jpg](https://commons.wikimedia.org/wiki/File:Ballon_RWC_2023.jpg) |
 | [Ballon rugby Stade toulousain mains.JPG](https://commons.wikimedia.org/wiki/File:Ballon_rugby_Stade_toulousain_mains.JPG) |
 | [Beauxis 11 08 2011.jpg](https://commons.wikimedia.org/wiki/File:Beauxis_11_08_2011.jpg) |
