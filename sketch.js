@@ -1,7 +1,7 @@
-// p5.js-based demo for the rugby ball detector. Loads best.onnx directly with
+// p5.js-based demo for the rugby ball detector. Loads rugby-ball-detector.onnx directly with
 // onnxruntime-web and uses p5 for the canvas, drawing, and drag-and-drop handling.
 
-const MODEL_URL = 'best.onnx';
+const MODEL_URL = 'rugby-ball-detector.onnx';
 const IMG_SIZE = 640;
 
 // 0.25 (Ultralytics' own default prediction threshold) cleanly isolates the single true
@@ -20,14 +20,21 @@ const DEFAULT_IMAGE_URL =
 const DEFAULT_IMAGE_CREDIT_URL =
   'https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Wilkinson_%26_Ga%C3%BCz%C3%A8re.JPG';
 
+// Fixed target-area size: the canvas never resizes per image - instead the image is
+// letterboxed (scaled to fit, centered, white padding) inside it, the same idea as the
+// model's own 640x640 preprocessing below but for display.
+const TARGET_W = 700;
+const TARGET_H = 480;
+
 let session = null;
-let currentImg = null; // native HTMLImageElement currently displayed
+let currentSource = null; // native HTMLImageElement or HTMLVideoElement currently displayed
 let detections = [];
 let creditURL = null;
 let cnv = null;
+let videoEl = null;
 
 function setup() {
-  cnv = createCanvas(640, 360);
+  cnv = createCanvas(TARGET_W, TARGET_H);
   cnv.parent('canvas-holder');
   cnv.drop(handleDroppedFile);
   cnv.dragOver(() => document.getElementById('canvas-holder').classList.add('drag-over'));
@@ -54,67 +61,148 @@ function loadDefaultImage() {
 function handleDroppedFile(file) {
   document.getElementById('canvas-holder').classList.remove('drag-over');
   if (!session) return setStatus('Model not loaded yet');
-  if (file.type !== 'image') return setStatus('Drop an image file');
 
-  const img = new Image();
-  img.onload = () => runDetection(img, null);
-  img.src = file.data;
+  if (file.type === 'image') {
+    const img = new Image();
+    img.onload = () => runDetection(img, null);
+    img.src = file.data;
+  } else if (file.type === 'video') {
+    runVideoDetection(file.data, null);
+  } else {
+    setStatus('Drop an image or video file');
+  }
 }
 
-async function runDetection(img, credit) {
-  setStatus('Running detection…');
-  currentImg = img;
-  creditURL = credit;
-  resizeCanvasFor(img);
-  updateCredit();
-
-  const { tensor, scale, padX, padY } = preprocess(img);
+async function runInference(source) {
+  const { tensor, scale, padX, padY } = preprocess(source);
   const inputTensor = new ort.Tensor('float32', tensor, [1, 3, IMG_SIZE, IMG_SIZE]);
   const feeds = { [session.inputNames[0]]: inputTensor };
   const results = await session.run(feeds);
   const output = results[session.outputNames[0]];
-
-  detections = parseOutput(output, scale, padX, padY);
-  redraw();
-  setStatus(
-    `Detected ${detections.length} ball${detections.length !== 1 ? 's' : ''} — ` +
-      'drag another image onto the canvas to try it'
-  );
+  return parseOutput(output, scale, padX, padY);
 }
 
-function resizeCanvasFor(img) {
-  const maxW = 700;
-  const scale = Math.min(1, maxW / img.width);
-  resizeCanvas(Math.round(img.width * scale), Math.round(img.height * scale));
+async function runDetection(img, credit) {
+  stopVideo(); // in case a video was already running
+  setStatus('Running detection…');
+  currentSource = img;
+  creditURL = credit;
+  updateCredit();
+
+  detections = await runInference(img);
+  redraw();
+  setStatus(`Detected ${detections.length} ball${detections.length !== 1 ? 's' : ''}`);
+}
+
+// Video is processed frame-by-frame, not played in real time: requestVideoFrameCallback
+// fires once per frame the browser actually decodes, we pause immediately, run detection on
+// exactly that frame, draw it, and only then arm the next callback and play() just long
+// enough to decode the next frame. The video can't advance until the current frame's
+// detection and drawing are completely finished. Loops back to the start at the end.
+function stopVideo() {
+  if (videoEl) {
+    videoEl.pause();
+    videoEl.src = '';
+    videoEl = null;
+  }
+}
+
+function runVideoDetection(dataURI, credit) {
+  stopVideo();
+  creditURL = credit;
+  updateCredit();
+
+  videoEl = document.createElement('video');
+  videoEl.muted = true;
+  videoEl.playsInline = true;
+  videoEl.src = dataURI;
+
+  videoEl.addEventListener(
+    'loadeddata',
+    function onLoaded() {
+      videoEl.removeEventListener('loadeddata', onLoaded);
+      // video.width/height (used by preprocess/draw) reflect HTML attributes, not the
+      // decoded frame size, so they need setting explicitly from videoWidth/videoHeight.
+      videoEl.width = videoEl.videoWidth;
+      videoEl.height = videoEl.videoHeight;
+      armNextVideoFrame();
+      videoEl.play().catch(() => {}); // play() can be interrupted by the next frame's pause() - harmless, ignore
+    },
+    { once: true }
+  );
+
+  videoEl.addEventListener('ended', () => {
+    if (!videoEl) return;
+    videoEl.currentTime = 0;
+    armNextVideoFrame();
+    videoEl.play().catch(() => {}); // play() can be interrupted by the next frame's pause() - harmless, ignore
+  });
+}
+
+function armNextVideoFrame() {
+  if (videoEl) videoEl.requestVideoFrameCallback(onVideoFrame);
+}
+
+async function onVideoFrame() {
+  if (!videoEl) return;
+  videoEl.pause();
+
+  currentSource = videoEl;
+  setStatus('Running detection…');
+
+  detections = await runInference(videoEl);
+  redraw();
+  setStatus(`Detected ${detections.length} ball${detections.length !== 1 ? 's' : ''} (video)`);
+
+  armNextVideoFrame();
+  if (videoEl) videoEl.play().catch(() => {}); // play() can be interrupted by the next frame's pause() - harmless, ignore
 }
 
 // Drawn via p5's underlying 2D context (drawingContext) rather than p5's own image()/rect()/
-// text(), because currentImg is a plain HTMLImageElement (loaded manually so its crossOrigin
-// can be set before loading - see loadDefaultImage/handleDroppedFile) and p5's high-level
-// drawing functions expect a p5.Image, not a native one. p5 still owns the canvas itself,
-// its sizing, and the drag-and-drop handling below.
+// text(), because currentSource is a plain HTMLImageElement or HTMLVideoElement (loaded
+// manually so an image's crossOrigin can be set before loading - see loadDefaultImage/
+// handleDroppedFile) and p5's high-level drawing functions expect a p5.Image, not a native
+// one. p5 still owns the canvas itself, its sizing, and the drag-and-drop handling below.
 function draw() {
   const ctx = drawingContext;
 
-  if (!currentImg) {
-    ctx.fillStyle = '#141414';
-    ctx.fillRect(0, 0, width, height);
-    return;
-  }
+  ctx.fillStyle = '#fff';
+  ctx.fillRect(0, 0, width, height);
 
-  ctx.drawImage(currentImg, 0, 0, width, height);
+  if (!currentSource) return;
 
-  const sx = width / currentImg.width;
-  const sy = height / currentImg.height;
+  // Letterbox: scale to fit the fixed target area, centered, same idea as preprocess() below
+  const scale = Math.min(width / currentSource.width, height / currentSource.height);
+  const drawW = currentSource.width * scale;
+  const drawH = currentSource.height * scale;
+  const offX = (width - drawW) / 2;
+  const offY = (height - drawH) / 2;
+
+  ctx.drawImage(currentSource, offX, offY, drawW, drawH);
 
   detections.forEach((d) => {
+    const bx1 = offX + d.x1 * scale;
+    const by1 = offY + d.y1 * scale;
+    const bx2 = offX + d.x2 * scale;
+    const by2 = offY + d.y2 * scale;
+
     ctx.strokeStyle = '#00ff88';
     ctx.lineWidth = 3;
-    ctx.strokeRect(d.x1 * sx, d.y1 * sy, (d.x2 - d.x1) * sx, (d.y2 - d.y1) * sy);
+    ctx.strokeRect(bx1, by1, bx2 - bx1, by2 - by1);
+
+    // Solid chip behind the label, not bare colored text, so it stays legible regardless of
+    // what's underneath (white letterbox padding or busy photo content) - and flipped below
+    // the box instead of above when there's no room, so it can't get clipped off the canvas.
+    const label = `rugby_ball ${(d.conf * 100).toFixed(0)}%`;
+    ctx.font = 'bold 14px sans-serif';
+    const labelW = ctx.measureText(label).width + 8;
+    const labelH = 20;
+    const labelY = by1 - labelH >= 0 ? by1 - labelH : by2;
 
     ctx.fillStyle = '#00ff88';
-    ctx.font = 'bold 16px sans-serif';
-    ctx.fillText(`rugby_ball ${(d.conf * 100).toFixed(0)}%`, d.x1 * sx, d.y1 * sy - 6);
+    ctx.fillRect(bx1, labelY, labelW, labelH);
+    ctx.fillStyle = '#000';
+    ctx.fillText(label, bx1 + 4, labelY + labelH - 6);
   });
 }
 

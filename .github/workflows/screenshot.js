@@ -28,7 +28,8 @@ const OUT_PATH = path.join(__dirname, '..', '..', 'screenshot.png'); // repo roo
     throw new Error(`Demo ran but found no ball ("${statusText}") - not updating screenshot.png`);
   }
 
-  await page.locator('main').screenshot({ path: OUT_PATH });
+  // Just the canvas itself, not the surrounding heading/status/hint text.
+  await page.locator('#canvas-holder canvas').screenshot({ path: OUT_PATH });
   console.log(`Wrote ${OUT_PATH}`);
   await browser.close();
 })();

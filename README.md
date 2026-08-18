@@ -20,9 +20,10 @@ canvas to try it instead.
 
 ## Contents
 
-- `index.html` / `style.css` / `sketch.js` - the browser demo (p5.js UI, `best.onnx` run with
-  `onnxruntime-web`)
-- `best.onnx` / `best.pt` - the trained model weights (ONNX and PyTorch formats)
+- `index.html` / `style.css` / `sketch.js` - the browser demo (p5.js UI, `rugby-ball-detector.onnx`
+  run with `onnxruntime-web`)
+- `rugby-ball-detector.onnx` / `rugby-ball-detector.pt` - the trained model weights (ONNX and
+  PyTorch formats)
 - `screenshot.png` - a screenshot of the live demo, regenerated on every push by
   [`.github/workflows/build.yml`](.github/workflows/build.yml) (headless Chromium via
   Playwright, see [`screenshot.js`](.github/workflows/screenshot.js))

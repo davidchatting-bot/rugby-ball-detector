@@ -33,8 +33,9 @@ the dataset, because Roboflow preserved however each ball was originally annotat
   the ball's outline rather than a box around it)
 
 `export_yolo.py` writes both straight through as YOLO label lines - Ultralytics' training
-pipeline (used to produce `../best.pt` / `../best.onnx`) handles both automatically,
-converting a polygon to its enclosing box when training a detector (verified directly against
+pipeline (used to produce `../rugby-ball-detector.pt` / `../rugby-ball-detector.onnx`)
+handles both automatically, converting a polygon to its enclosing box when training a
+detector (verified directly against
 Ultralytics' `verify_image_label` source: rows with more than 6 fields are treated as segments
 and passed through `segments2boxes` before training). If you're consuming `balls` yourself,
 branch on the list length:
