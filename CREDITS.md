@@ -9,8 +9,8 @@ parentheses) with hyphens, so a reconstructed guess can easily 404.
 Each row below has been checked against the Wikimedia Commons API (last checked
 2026-08-18): where a working file was found, the row is a direct link showing its
 real title; where it's still unresolved, the row shows the reconstructed filename
-as plain text plus a link to search Commons for it. As of the last check, 164 of
-179 are resolved to a real file and 15 are still just a search link.
+as plain text plus a link to search Commons for it. As of the last check, 165 of
+179 are resolved to a real file and 14 are still just a search link.
 
 | Filename |
 |---|
@@ -51,7 +51,7 @@ as plain text plus a link to search Commons for it. As of the last check, 164 of
 | [Boyet Penality.JPG](https://commons.wikimedia.org/wiki/File:Boyet_Penality.JPG) |
 | [Brock James9.jpg](https://commons.wikimedia.org/wiki/File:Brock_James9.jpg) |
 | [ByronKelleher.jpg](https://commons.wikimedia.org/wiki/File:ByronKelleher.jpg) |
-| Byron_Kelleher_try_ST-Toulousain-biarritz_olympique_07092008.JPG ([search](https://commons.wikimedia.org/w/index.php?search=Byron%20Kelleher%20try%20ST-Toulousain-biarritz%20olympique%2007092008&title=Special:MediaSearch)) |
+| [Byron Kelleher try ST.Toulousain-biarritz olympique 07092008.JPG](https://commons.wikimedia.org/wiki/File:Byron_Kelleher_try_ST.Toulousain-biarritz_olympique_07092008.JPG) |
 | [Camille Lopez 2020.jpg](https://commons.wikimedia.org/wiki/File:Camille_Lopez_2020.jpg) |
 | [Capuozzo Italia 2022 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Capuozzo_Italia_2022_(cropped).jpg) |
 | [Clément Poitrenaud 11 08 2011.jpg](https://commons.wikimedia.org/wiki/File:Cl%C3%A9ment_Poitrenaud_11_08_2011.jpg) |
