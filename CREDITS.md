@@ -9,12 +9,12 @@ parentheses) with hyphens, so a reconstructed guess can easily 404.
 Each row below has been checked against the Wikimedia Commons API (last checked
 2026-08-18): where a working file was found, the row is a direct link showing its
 real title; where it's still unresolved, the row shows the reconstructed filename
-as plain text plus a link to search Commons for it. As of the last check, 118 of
-179 are resolved to a real file and 61 are still just a search link.
+as plain text plus a link to search Commons for it. As of the last check, 131 of
+179 are resolved to a real file and 48 are still just a search link.
 
 | Filename |
 |---|
-| -_Lyon_olympique_universitaire_vs-_Stade_franc-ais-_8th_August_2014_-24-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=-%20Lyon%20olympique%20universitaire%20vs-%20Stade%20franc-ais-%208th%20August%202014%20-24-&title=Special:MediaSearch)) |
+| [- Lyon olympique universitaire vs. Stade français, 8th August 2014.jpg](https://commons.wikimedia.org/wiki/File:-_Lyon_olympique_universitaire_vs._Stade_fran%C3%A7ais%2C_8th_August_2014.jpg) |
 | [2014 W6N - France vs Italy - Christelle Le Duff 5780-2.jpg](https://commons.wikimedia.org/wiki/File:2014_W6N_-_France_vs_Italy_-_Christelle_Le_Duff_5780-2.jpg) |
 | [2014 W6N - France vs Italy - Christelle Le Duff 5780.jpg](https://commons.wikimedia.org/wiki/File:2014_W6N_-_France_vs_Italy_-_Christelle_Le_Duff_5780.jpg) |
 | [2014 W6N - France vs Italy - Christelle Le Duff 5925.jpg](https://commons.wikimedia.org/wiki/File:2014_W6N_-_France_vs_Italy_-_Christelle_Le_Duff_5925.jpg) |
@@ -36,7 +36,7 @@ as plain text plus a link to search Commons for it. As of the last check, 118 of
 | [Alexander Yanyushkin cropped.jpg](https://commons.wikimedia.org/wiki/File:Alexander_Yanyushkin_cropped.jpg) |
 | [AntoineDupontWax2023.jpg](https://commons.wikimedia.org/wiki/File:AntoineDupontWax2023.jpg) |
 | AntoineDupont_ItaliaFrancia6N2023_2-cropped-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=AntoineDupont%20ItaliaFrancia6N2023%202-cropped-&title=Special:MediaSearch)) |
-| Autumn_Nations_Series-_Italia_vs_All_Blacks-632_-51667214208-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Autumn%20Nations%20Series-%20Italia%20vs%20All%20Blacks-632%20-51667214208-&title=Special:MediaSearch)) |
+| [Autumn Nations Series- Italia vs All Blacks-632 (51667214208).jpg](https://commons.wikimedia.org/wiki/File:Autumn_Nations_Series-_Italia_vs_All_Blacks-632_(51667214208).jpg) |
 | [Axel Despérès.jpg](https://commons.wikimedia.org/wiki/File:Axel_Desp%C3%A9r%C3%A8s.jpg) |
 | BKT_URC_23-24-_Zebre_Parma_vs_Edinburgh_Rugby-64-Migliorato-NR_-53538627347-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=BKT%20URC%2023-24-%20Zebre%20Parma%20vs%20Edinburgh%20Rugby-64-Migliorato-NR%20-53538627347-&title=Special:MediaSearch)) |
 | [Ballon RWC 2023.jpg](https://commons.wikimedia.org/wiki/File:Ballon_RWC_2023.jpg) |
@@ -67,12 +67,12 @@ as plain text plus a link to search Commons for it. As of the last check, 118 of
 | [Ellisalde Novès ST vs USAP 2011.jpg](https://commons.wikimedia.org/wiki/File:Ellisalde_Nov%C3%A8s_ST_vs_USAP_2011.jpg) |
 | Entrenamiento_Los_Pumas_-7686673666-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Entrenamiento%20Los%20Pumas%20-7686673666-&title=Special:MediaSearch)) |
 | [Erdocio MHR.jpg](https://commons.wikimedia.org/wiki/File:Erdocio_MHR.jpg) |
-| European_Rugby_Champions_Cup_24-25-_RC_Toulonnais_vs_Stade_Toulousain-128-Migliorato-NR_-54468572477-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=European%20Rugby%20Champions%20Cup%2024-25-%20RC%20Toulonnais%20vs%20Stade%20Toulousain-128-Migliorato-NR%20-54468572477-&title=Special:MediaSearch)) |
-| European_Rugby_Champions_Cup_24-25-_RC_Toulonnais_vs_Stade_Toulousain-330-Migliorato-NR_-54469417731-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=European%20Rugby%20Champions%20Cup%2024-25-%20RC%20Toulonnais%20vs%20Stade%20Toulousain-330-Migliorato-NR%20-54469417731-&title=Special:MediaSearch)) |
-| European_Rugby_Champions_Cup_24-25-_RC_Toulonnais_vs_Stade_Toulousain-331-Migliorato-NR_-54469418026-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=European%20Rugby%20Champions%20Cup%2024-25-%20RC%20Toulonnais%20vs%20Stade%20Toulousain-331-Migliorato-NR%20-54469418026-&title=Special:MediaSearch)) |
-| European_Rugby_Champions_Cup_24-25-_RC_Toulonnais_vs_Stade_Toulousain-38-Migliorato-NR_-54469674613-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=European%20Rugby%20Champions%20Cup%2024-25-%20RC%20Toulonnais%20vs%20Stade%20Toulousain-38-Migliorato-NR%20-54469674613-&title=Special:MediaSearch)) |
-| European_Rugby_Champions_Cup_24-25-_RC_Toulonnais_vs_Stade_Toulousain-408-Migliorato-NR_-54469773930-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=European%20Rugby%20Champions%20Cup%2024-25-%20RC%20Toulonnais%20vs%20Stade%20Toulousain-408-Migliorato-NR%20-54469773930-&title=Special:MediaSearch)) |
-| European_Rugby_Champions_Cup_24-25-_RC_Toulonnais_vs_Stade_Toulousain-545-Migliorato-NR_-54468584262-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=European%20Rugby%20Champions%20Cup%2024-25-%20RC%20Toulonnais%20vs%20Stade%20Toulousain-545-Migliorato-NR%20-54468584262-&title=Special:MediaSearch)) |
+| [European Rugby Champions Cup 24-25- RC Toulonnais vs Stade Toulousain-128-Migliorato-NR (54468572477).jpg](https://commons.wikimedia.org/wiki/File:European_Rugby_Champions_Cup_24-25-_RC_Toulonnais_vs_Stade_Toulousain-128-Migliorato-NR_(54468572477).jpg) |
+| [European Rugby Champions Cup 24-25- RC Toulonnais vs Stade Toulousain-330-Migliorato-NR (54469417731).jpg](https://commons.wikimedia.org/wiki/File:European_Rugby_Champions_Cup_24-25-_RC_Toulonnais_vs_Stade_Toulousain-330-Migliorato-NR_(54469417731).jpg) |
+| [European Rugby Champions Cup 24-25- RC Toulonnais vs Stade Toulousain-331-Migliorato-NR (54469418026).jpg](https://commons.wikimedia.org/wiki/File:European_Rugby_Champions_Cup_24-25-_RC_Toulonnais_vs_Stade_Toulousain-331-Migliorato-NR_(54469418026).jpg) |
+| [European Rugby Champions Cup 24-25- RC Toulonnais vs Stade Toulousain-38-Migliorato-NR (54469674613).jpg](https://commons.wikimedia.org/wiki/File:European_Rugby_Champions_Cup_24-25-_RC_Toulonnais_vs_Stade_Toulousain-38-Migliorato-NR_(54469674613).jpg) |
+| [European Rugby Champions Cup 24-25- RC Toulonnais vs Stade Toulousain-408-Migliorato-NR (54469773930).jpg](https://commons.wikimedia.org/wiki/File:European_Rugby_Champions_Cup_24-25-_RC_Toulonnais_vs_Stade_Toulousain-408-Migliorato-NR_(54469773930).jpg) |
+| [European Rugby Champions Cup 24-25- RC Toulonnais vs Stade Toulousain-545-Migliorato-NR (54468584262).jpg](https://commons.wikimedia.org/wiki/File:European_Rugby_Champions_Cup_24-25-_RC_Toulonnais_vs_Stade_Toulousain-545-Migliorato-NR_(54468584262).jpg) |
 | Exp-small-259527_-4133713411-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Exp-small-259527%20-4133713411-&title=Special:MediaSearch)) |
 | [Florian Fritz 22 07 2011.jpg](https://commons.wikimedia.org/wiki/File:Florian_Fritz_22_07_2011.jpg) |
 | [Florin Vlaicu Penalty 2017.jpg](https://commons.wikimedia.org/wiki/File:Florin_Vlaicu_Penalty_2017.jpg) |
@@ -177,14 +177,14 @@ as plain text plus a link to search Commons for it. As of the last check, 118 of
 | Thomas_Castaigne-de_cropped.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Thomas%20Castaigne-de%20cropped&title=Special:MediaSearch)) |
 | [Thomas Ramos 2016-10-30.jpg](https://commons.wikimedia.org/wiki/File:Thomas_Ramos_2016-10-30.jpg) |
 | [Timoci Matanavu looking right and passing the ball.jpg](https://commons.wikimedia.org/wiki/File:Timoci_Matanavu_looking_right_and_passing_the_ball.jpg) |
-| U20_6Nations_Summer_Series_Day_5_Match_1-_Francia_vs_Sudafrica-65_-52200358610-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=U20%206Nations%20Summer%20Series%20Day%205%20Match%201-%20Francia%20vs%20Sudafrica-65%20-52200358610-&title=Special:MediaSearch)) |
-| U20_6Nations_Summer_Series_Day_5_Match_1-_Francia_vs_Sudafrica-68_-52200131674-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=U20%206Nations%20Summer%20Series%20Day%205%20Match%201-%20Francia%20vs%20Sudafrica-68%20-52200131674-&title=Special:MediaSearch)) |
+| [U20 6Nations Summer Series Day 5 Match 1- Francia vs Sudafrica-65 (52200358610).jpg](https://commons.wikimedia.org/wiki/File:U20_6Nations_Summer_Series_Day_5_Match_1-_Francia_vs_Sudafrica-65_(52200358610).jpg) |
+| [U20 6Nations Summer Series Day 5 Match 1- Francia vs Sudafrica-68 (52200131674).jpg](https://commons.wikimedia.org/wiki/File:U20_6Nations_Summer_Series_Day_5_Match_1-_Francia_vs_Sudafrica-68_(52200131674).jpg) |
 | [USO-CAB - 20131130 - Ballon.jpg](https://commons.wikimedia.org/wiki/File:USO-CAB_-_20131130_-_Ballon.jpg) |
 | [USO-SFP - 20140830 44.jpg](https://commons.wikimedia.org/wiki/File:USO-SFP_-_20140830_44.jpg) |
 | [USO - ASM - 20150905 - Nicky Robinson 2.jpg](https://commons.wikimedia.org/wiki/File:USO_-_ASM_-_20150905_-_Nicky_Robinson_2.jpg) |
-| World_Rugby_Championship_U20s_-_Day_3-315_-18201106393-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=World%20Rugby%20Championship%20U20s%20-%20Day%203-315%20-18201106393-&title=Special:MediaSearch)) |
-| World_Rugby_Championship_U20s_-_Day_4-69_-18906552742-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=World%20Rugby%20Championship%20U20s%20-%20Day%204-69%20-18906552742-&title=Special:MediaSearch)) |
-| World_Rugby_Championship_U20s_-_Day_5-672_-19059437826-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=World%20Rugby%20Championship%20U20s%20-%20Day%205-672%20-19059437826-&title=Special:MediaSearch)) |
+| [World Rugby Championship U20s - Day 3-315 (18201106393).jpg](https://commons.wikimedia.org/wiki/File:World_Rugby_Championship_U20s_-_Day_3-315_(18201106393).jpg) |
+| [World Rugby Championship U20s - Day 4-69 (18906552742).jpg](https://commons.wikimedia.org/wiki/File:World_Rugby_Championship_U20s_-_Day_4-69_(18906552742).jpg) |
+| [World Rugby Championship U20s - Day 5-672 (19059437826).jpg](https://commons.wikimedia.org/wiki/File:World_Rugby_Championship_U20s_-_Day_5-672_(19059437826).jpg) |
 | World_Rugby_U20_Championship_2025_Day_4-420_-54663377264-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=World%20Rugby%20U20%20Championship%202025%20Day%204-420%20-54663377264-&title=Special:MediaSearch)) |
 | World_Rugby_U20_Championship_2025_Day_4-549_-54663147111-.jpg ([search](https://commons.wikimedia.org/w/index.php?search=World%20Rugby%20U20%20Championship%202025%20Day%204-549%20-54663147111-&title=Special:MediaSearch)) |
 | [Yann David Facing the viewer and looking right.jpg](https://commons.wikimedia.org/wiki/File:Yann_David_Facing_the_viewer_and_looking_right.jpg) |
