@@ -9,8 +9,8 @@ parentheses) with hyphens, so a reconstructed guess can easily 404.
 Each row below has been checked against the Wikimedia Commons API (last checked
 2026-08-18): where a working file was found, the row is a direct link showing its
 real title; where it's still unresolved, the row shows the reconstructed filename
-as plain text plus a link to search Commons for it. As of the last check, 165 of
-179 are resolved to a real file and 14 are still just a search link.
+as plain text plus a link to search Commons for it. As of the last check, 172 of
+179 are resolved to a real file and 7 are still just a search link.
 
 | Filename |
 |---|
@@ -81,7 +81,7 @@ as plain text plus a link to search Commons for it. As of the last check, 165 of
 | [Franco Mantero jugando para el Mazabi Santander.jpg](https://commons.wikimedia.org/wiki/File:Franco_Mantero_jugando_para_el_Mazabi_Santander.jpg) |
 | [Franco mantero rugby.jpg](https://commons.wikimedia.org/wiki/File:Franco_mantero_rugby.jpg) |
 | [Frederic Michalak - 2012-09-29.jpg](https://commons.wikimedia.org/wiki/File:Frederic_Michalak_-_2012-09-29.jpg) |
-| Fritz_Poitrenaud_Be-zy_2.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Fritz%20Poitrenaud%20Be-zy%202&title=Special:MediaSearch)) |
+| [Fritz Poitrenaud Bézy 2.jpg](https://commons.wikimedia.org/wiki/File:Fritz_Poitrenaud_B%C3%A9zy_2.jpg) |
 | [Gilbert Rugby Union ball 01.jpg](https://commons.wikimedia.org/wiki/File:Gilbert_Rugby_Union_ball_01.jpg) |
 | [Gilbert zenon rugby ball.jpg](https://commons.wikimedia.org/wiki/File:Gilbert_zenon_rugby_ball.jpg) |
 | [Gregory Lamboley.jpeg](https://commons.wikimedia.org/wiki/File:Gregory_Lamboley.jpeg) |
@@ -106,9 +106,9 @@ as plain text plus a link to search Commons for it. As of the last check, 165 of
 | [Jacques Cronjé stadium.jpg](https://commons.wikimedia.org/wiki/File:Jacques_Cronj%C3%A9_stadium.jpg) |
 | [Jan Machacek rugby 2002.jpg](https://commons.wikimedia.org/wiki/File:Jan_Machacek_rugby_2002.jpg) |
 | [Jan Machacek rugby 2002 (cropped).jpg](https://commons.wikimedia.org/wiki/File:Jan_Machacek_rugby_2002_(cropped).jpg) |
-| Jauzion_Fritz_Be-zy_David.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Jauzion%20Fritz%20Be-zy%20David&title=Special:MediaSearch)) |
+| [Jauzion Fritz Bézy David.jpg](https://commons.wikimedia.org/wiki/File:Jauzion_Fritz_B%C3%A9zy_David.jpg) |
 | Jauzion_Fritz_E-lissalde_Beauxis.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Jauzion%20Fritz%20E-lissalde%20Beauxis&title=Special:MediaSearch)) |
-| Jean-Marc_Doussain_looking_right_and_Nicolas_Be-zy_facing_left.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Jean-Marc%20Doussain%20looking%20right%20and%20Nicolas%20Be-zy%20facing%20left&title=Special:MediaSearch)) |
+| [Jean-Marc Doussain looking right and Nicolas Bézy facing left.jpg](https://commons.wikimedia.org/wiki/File:Jean-Marc_Doussain_looking_right_and_Nicolas_B%C3%A9zy_facing_left.jpg) |
 | [Jean-Marc Doussain passing the ball.jpg](https://commons.wikimedia.org/wiki/File:Jean-Marc_Doussain_passing_the_ball.jpg) |
 | [Jordan Mislov.png](https://commons.wikimedia.org/wiki/File:Jordan_Mislov.png) |
 | [Josh rugby.jpg](https://commons.wikimedia.org/wiki/File:Josh_rugby.jpg) |
@@ -130,12 +130,12 @@ as plain text plus a link to search Commons for it. As of the last check, 165 of
 | [Mike Prendergast.jpg](https://commons.wikimedia.org/wiki/File:Mike_Prendergast.jpg) |
 | [Morgan Parra Penalty 01.jpg](https://commons.wikimedia.org/wiki/File:Morgan_Parra_Penalty_01.jpg) |
 | [Nick Frisby 2014 Brisbane.jpg](https://commons.wikimedia.org/wiki/File:Nick_Frisby_2014_Brisbane.jpg) |
-| Nicolas_Be-zy_ballons.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Nicolas%20Be-zy%20ballons&title=Special:MediaSearch)) |
-| Nicolas_Be-zy_ballons_facing_left.jpeg ([search](https://commons.wikimedia.org/w/index.php?search=Nicolas%20Be-zy%20ballons%20facing%20left&title=Special:MediaSearch)) |
-| Nicolas_Be-zy_passe_ST_vs_UBB.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Nicolas%20Be-zy%20passe%20ST%20vs%20UBB&title=Special:MediaSearch)) |
+| [Nicolas Bézy ballons.jpg](https://commons.wikimedia.org/wiki/File:Nicolas_B%C3%A9zy_ballons.jpg) |
+| [Nicolas Bézy ballons facing left.jpeg](https://commons.wikimedia.org/wiki/File:Nicolas_B%C3%A9zy_ballons_facing_left.jpeg) |
+| [Nicolas Bézy passe ST vs UBB.jpg](https://commons.wikimedia.org/wiki/File:Nicolas_B%C3%A9zy_passe_ST_vs_UBB.jpg) |
 | [Nowell-jack.jpg](https://commons.wikimedia.org/wiki/File:Nowell-jack.jpg) |
 | [Pénalité Luke McAlister.jpg](https://commons.wikimedia.org/wiki/File:P%C3%A9nalit%C3%A9_Luke_McAlister.jpg) |
-| Poitrenaud_Be-zy.jpg ([search](https://commons.wikimedia.org/w/index.php?search=Poitrenaud%20Be-zy&title=Special:MediaSearch)) |
+| [Poitrenaud Bézy.jpg](https://commons.wikimedia.org/wiki/File:Poitrenaud_B%C3%A9zy.jpg) |
 | [Racing Métro 92 Jonathan Wisniewski.jpg](https://commons.wikimedia.org/wiki/File:Racing_M%C3%A9tro_92_Jonathan_Wisniewski.jpg) |
 | [Raphael Ibanez.jpg](https://commons.wikimedia.org/wiki/File:Raphael_Ibanez.jpg) |
 | [Remy Martin.jpg](https://commons.wikimedia.org/wiki/File:Remy_Martin.jpg) |
