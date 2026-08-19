@@ -77,12 +77,12 @@ function handleDroppedFile(file) {
 }
 
 async function runInference(source) {
-  const { tensor, scale, padX, padY } = preprocess(source);
+  const { tensor, s, padX, padY } = preprocess(source);
   const inputTensor = new ort.Tensor('float32', tensor, [1, 3, IMG_SIZE, IMG_SIZE]);
   const feeds = { [session.inputNames[0]]: inputTensor };
   const results = await session.run(feeds);
   const output = results[session.outputNames[0]];
-  return parseOutput(output, scale, padX, padY);
+  return parseOutput(output, s, padX, padY);
 }
 
 async function runDetection(img, credit) {
@@ -174,19 +174,19 @@ function draw() {
   if (!currentSource) return;
 
   // Letterbox: scale to fit the fixed target area, centered, same idea as preprocess() below
-  const scale = Math.min(width / currentSource.width, height / currentSource.height);
-  const drawW = currentSource.width * scale;
-  const drawH = currentSource.height * scale;
+  const s = Math.min(width / currentSource.width, height / currentSource.height);
+  const drawW = currentSource.width * s;
+  const drawH = currentSource.height * s;
   const offX = (width - drawW) / 2;
   const offY = (height - drawH) / 2;
 
   ctx.drawImage(currentSource, offX, offY, drawW, drawH);
 
   detections.forEach((d) => {
-    const bx1 = offX + d.x1 * scale;
-    const by1 = offY + d.y1 * scale;
-    const bx2 = offX + d.x2 * scale;
-    const by2 = offY + d.y2 * scale;
+    const bx1 = offX + d.x1 * s;
+    const by1 = offY + d.y1 * s;
+    const bx2 = offX + d.x2 * s;
+    const by2 = offY + d.y2 * s;
 
     ctx.strokeStyle = '#00ff88';
     ctx.lineWidth = 3;
@@ -230,9 +230,9 @@ function preprocess(img) {
   const ctx = canvas.getContext('2d');
 
   // Letterbox: scale image to fit 640x640 with padding
-  const scale = Math.min(IMG_SIZE / img.width, IMG_SIZE / img.height);
-  const newW = Math.round(img.width * scale);
-  const newH = Math.round(img.height * scale);
+  const s = Math.min(IMG_SIZE / img.width, IMG_SIZE / img.height);
+  const newW = Math.round(img.width * s);
+  const newH = Math.round(img.height * s);
   const padX = (IMG_SIZE - newW) / 2;
   const padY = (IMG_SIZE - newH) / 2;
 
@@ -249,10 +249,10 @@ function preprocess(img) {
     tensor[i + IMG_SIZE * IMG_SIZE * 2] = imageData[i * 4 + 2] / 255; // B
   }
 
-  return { tensor, scale, padX, padY };
+  return { tensor, s, padX, padY };
 }
 
-function parseOutput(output, scale, padX, padY) {
+function parseOutput(output, s, padX, padY) {
   // YOLOv8 output: [1, 5, 8400] - 5 = cx, cy, w, h, conf
   const data = output.data;
   const numBoxes = output.dims[2];
@@ -268,10 +268,10 @@ function parseOutput(output, scale, padX, padY) {
     const h = data[3 * numBoxes + i];
 
     // Convert from padded 640x640 space back to original image space
-    const x1 = (cx - w / 2 - padX) / scale;
-    const y1 = (cy - h / 2 - padY) / scale;
-    const x2 = (cx + w / 2 - padX) / scale;
-    const y2 = (cy + h / 2 - padY) / scale;
+    const x1 = (cx - w / 2 - padX) / s;
+    const y1 = (cy - h / 2 - padY) / s;
+    const x2 = (cx + w / 2 - padX) / s;
+    const y2 = (cy + h / 2 - padY) / s;
 
     dets.push({ x1, y1, x2, y2, conf });
   }

@@ -1,0 +1,11 @@
+{
+  "name": "rugby-ball-detector",
+  "version": "1.0.0",
+  "description": "A small YOLOv8 model for detecting rugby balls in photos and video, running entirely in the browser via ONNX Runtime Web and p5.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/davidchatting/rugby-ball-detector.git"
+  },
+  "author": "David Chatting (davidchatting.com)",
+  "homepage": "https://editor.p5js.org/davidchatting/sketches/tCE7wAUM-"
+}
