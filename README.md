@@ -3,9 +3,11 @@
 <!-- index.html/sketch.js/style.css/screenshot.png are synced from the p5.js editor sketch
      (package.json's homepage) by .github/workflows/build.yml on every push to master - don't
      hand-edit them, they'll just get overwritten. See "Editing this demo" below. -->
-[![Screenshot of the demo detecting a rugby ball](screenshot.png)](https://davidchatting.com/rugby-ball-detector/)
+[![Screenshot of the demo detecting a rugby ball](screenshot.png)](https://editor.p5js.org/davidchatting/sketches/tCE7wAUM-)
 
-[Try the p5.js demo](https://davidchatting.com/rugby-ball-detector/) with images or video.
+[https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Jonny_Wilkinson_kicking_a_penalty_(cropped).jpg](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Jonny_Wilkinson_kicking_a_penalty_(cropped).jpg)
+
+[Try the p5.js demo](https://editor.p5js.org/davidchatting/sketches/tCE7wAUM-) with images or video.
 
 A small YOLOv8 model for detecting rugby balls in photos and video, running entirely in the
 browser (no server, no upload) via ONNX Runtime Web and p5.js. It is trained on a small set of images, so not at production quality. The training photos are exclusivelky of **Gilbert** balls, and this may not generalise well to other brands.
