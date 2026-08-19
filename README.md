@@ -4,7 +4,7 @@
      (package.json's homepage) by .github/workflows/build.yml on every push to master - don't
      hand-edit them, they'll just get overwritten. See "Syncing with the p5.js Editor" below. -->
 [![Screenshot of the demo detecting a rugby ball](screenshot.png)](https://davidchatting.com/rugby-ball-detector/)
-<sub>[https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Jonny_Wilkinson_kicking_a_penalty_(cropped).jpg](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Jonny_Wilkinson_kicking_a_penalty_(cropped).jpg)</sub>
+<sub><sub>[https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Jonny_Wilkinson_kicking_a_penalty_(cropped).jpg](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Jonny_Wilkinson_kicking_a_penalty_(cropped).jpg)</sub></sub>
 
 [Try the p5.js demo](https://davidchatting.com/rugby-ball-detector/) with images or video.
 
