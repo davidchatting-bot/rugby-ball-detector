@@ -3,8 +3,10 @@
 <!-- index.html/sketch.js/style.css/screenshot.png are synced from the p5.js editor sketch
      (package.json's homepage) by .github/workflows/build.yml on every push to master - don't
      hand-edit them, they'll just get overwritten. See "Syncing with the p5.js Editor" below. -->
-[![Screenshot of the demo detecting a rugby ball](screenshot.png)](https://davidchatting.com/rugby-ball-detector/)
-<sub><sub>[https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Jonny_Wilkinson_kicking_a_penalty_(cropped).jpg](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Jonny_Wilkinson_kicking_a_penalty_(cropped).jpg)</sub></sub>
+<p align="center">
+  <a href="https://davidchatting.com/rugby-ball-detector/"><img src="screenshot.png" alt="Screenshot of the demo detecting a rugby ball"></a><br>
+  <sub><sub><a href="https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Jonny_Wilkinson_kicking_a_penalty_(cropped).jpg">https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Jonny_Wilkinson_kicking_a_penalty_(cropped).jpg</a></sub></sub>
+</p>
 
 [Try the p5.js demo](https://davidchatting.com/rugby-ball-detector/) with images or video.
 
