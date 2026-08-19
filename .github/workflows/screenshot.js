@@ -6,6 +6,7 @@
 // runDetection() finishes - see ../../sketch.js) rather than a fixed delay, so it's not flaky
 // under CI load or while the model/wasm runtime are still loading.
 const { chromium } = require('playwright');
+const fs = require('fs');
 const path = require('path');
 
 const DEMO_URL = process.argv[2] || 'http://localhost:8099/';
@@ -28,8 +29,13 @@ const OUT_PATH = path.join(__dirname, '..', '..', 'screenshot.png'); // repo roo
     throw new Error(`Demo ran but found no ball ("${statusText}") - not updating screenshot.png`);
   }
 
-  // Just the canvas itself, not the surrounding heading/status/hint text.
-  await page.locator('#canvas-holder canvas').screenshot({ path: OUT_PATH });
+  // Read the canvas' own pixels via toDataURL() rather than an element screenshot - an element
+  // screenshot is a viewport crop keyed to the CSS box's on-screen rect, which at fractional
+  // device-pixel widths can pick up a sliver of #canvas-holder's dashed border alongside it.
+  // toDataURL() has no such rounding: it's exactly the canvas' backing bitmap, alpha channel
+  // (transparent letterbox padding) included.
+  const dataURL = await page.$eval('#canvas-holder canvas', (canvas) => canvas.toDataURL('image/png'));
+  fs.writeFileSync(OUT_PATH, Buffer.from(dataURL.split(',')[1], 'base64'));
   console.log(`Wrote ${OUT_PATH}`);
   await browser.close();
 })();

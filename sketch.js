@@ -8,20 +8,20 @@ const IMG_SIZE = 640;
 // detection on the default test image below: 91% confidence vs. a 6% false positive.
 const CONF_THRESHOLD = 0.25;
 
-// ST vs RCT 2012 12 Wilkinson & Gaüzère.JPG, from the training set's "test" split - see
-// dataset/dataset.json
+// ST vs RCT 2012 12 Jonny Wilkinson kicking a penalty (cropped).jpg, from the training set's
+// "test" split - see dataset/dataset.json
 //
 // Loaded from upload.wikimedia.org directly (not the commons.wikimedia.org/Special:FilePath
 // redirect) because a crossOrigin='anonymous' image load requires an
 // Access-Control-Allow-Origin header on every hop of the redirect chain, and Commons' own
 // redirect responses don't send one - only the final upload.wikimedia.org response does.
 const DEFAULT_IMAGE_URL =
-  'https://upload.wikimedia.org/wikipedia/commons/c/c7/ST_vs_RCT_2012_12_Wilkinson_%26_Ga%C3%BCz%C3%A8re.JPG';
+  'https://upload.wikimedia.org/wikipedia/commons/5/50/ST_vs_RCT_2012_12_Jonny_Wilkinson_kicking_a_penalty_%28cropped%29.jpg';
 const DEFAULT_IMAGE_CREDIT_URL =
-  'https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Wilkinson_%26_Ga%C3%BCz%C3%A8re.JPG';
+  'https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Jonny_Wilkinson_kicking_a_penalty_(cropped).jpg';
 
 // Fixed target-area size: the canvas never resizes per image - instead the image is
-// letterboxed (scaled to fit, centered, white padding) inside it, the same idea as the
+// letterboxed (scaled to fit, centered, transparent padding) inside it, the same idea as the
 // model's own 640x640 preprocessing below but for display.
 const TARGET_W = 700;
 const TARGET_H = 480;
@@ -166,8 +166,7 @@ async function onVideoFrame() {
 function draw() {
   const ctx = drawingContext;
 
-  ctx.fillStyle = '#fff';
-  ctx.fillRect(0, 0, width, height);
+  ctx.clearRect(0, 0, width, height);
 
   if (!currentSource) return;
 
@@ -213,7 +212,7 @@ function setStatus(msg) {
 function updateCredit() {
   const el = document.getElementById('credit');
   if (creditURL) {
-    el.innerHTML = `Test image: <a href="${creditURL}" target="_blank" rel="noopener">Wikimedia Commons</a> (see the page for its specific license &amp; author)`;
+    el.innerHTML = `<a href="${creditURL}" target="_blank" rel="noopener">${creditURL}</a>`;
   } else {
     el.textContent = '';
   }
