@@ -170,6 +170,7 @@ function draw() {
   const ctx = drawingContext;
 
   ctx.clearRect(0, 0, width, height);
+  background(220);
 
   if (!currentSource) return;
 
