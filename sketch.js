@@ -1,7 +1,10 @@
 // p5.js-based demo for the rugby ball detector. Loads rugby-ball-detector.onnx directly with
 // onnxruntime-web and uses p5 for the canvas, drawing, and drag-and-drop handling.
 
-const MODEL_URL = 'rugby-ball-detector.onnx';
+// Loaded from jsDelivr's GitHub CDN rather than the repo-relative file, pinned to a release
+// tag so the URL never moves under anyone using it (CDN caches by tag, CORS open by default) -
+// this is also the URL to use from other people's own sketches, see README.md.
+const MODEL_URL = 'https://cdn.jsdelivr.net/gh/davidchatting/rugby-ball-detector@v1.0.0/rugby-ball-detector.onnx';
 const IMG_SIZE = 640;
 
 // 0.25 (Ultralytics' own default prediction threshold) cleanly isolates the single true

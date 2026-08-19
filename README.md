@@ -9,6 +9,21 @@
 A small YOLOv8 model for detecting rugby balls in photos and video, running entirely in the
 browser (no server, no upload) via ONNX Runtime Web and p5.js. It is trained on a small set of images, so not at production quality. The training photos are exclusivelky of **Gilbert** balls, and this may not generalise well to other brands.
 
+## Use it in your own sketch
+
+The model is public - load it straight from jsDelivr's GitHub CDN, no need to host your own
+copy or clone this repo:
+
+```
+https://cdn.jsdelivr.net/gh/davidchatting/rugby-ball-detector@v1.0.0/rugby-ball-detector.onnx
+```
+
+That's an [ONNX](https://onnx.ai/) file, pinned to the [`v1.0.0`](https://github.com/davidchatting/rugby-ball-detector/releases/tag/v1.0.0)
+release tag so the URL won't change under you - run with
+[`onnxruntime-web`](https://github.com/microsoft/onnxruntime), one class (`rugby_ball`), 640x640
+input, output shape `[1, 5, 8400]` (`cx, cy, w, h, conf`, needs NMS). See
+[`sketch.js`](sketch.js) for a complete working example, including pre/post-processing.
+
 ## Contents
 
 - `index.html` / `style.css` / `sketch.js` - the browser demo (p5.js UI, `rugby-ball-detector.onnx`
