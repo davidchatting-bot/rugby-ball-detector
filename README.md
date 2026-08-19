@@ -34,8 +34,9 @@ input, output shape `[1, 5, 8400]` (`cx, cy, w, h, conf`, needs NMS). See
 This repository automatically synchronises with the
 [p5.js editor](https://editor.p5js.org/davidchatting/sketches/tCE7wAUM-), where `index.html`,
 `sketch.js`, and `style.css` are maintained. Using the github workflows,
-[build.yml](.github/workflows/build.yml) automatically downloads the sketch's files via the
-editor's export API and commits them into the repo, along with a freshly regenerated
+[build.yml](.github/workflows/build.yml) runs
+[sync-p5js-editor.sh](.github/workflows/sync-p5js-editor.sh), which downloads the sketch's
+files via the editor's export API, then commits them into the repo, along with a freshly regenerated
 `screenshot.png`. The reference for the p5.js sketch is held in the
 [package.json](package.json) `homepage` field.
 
