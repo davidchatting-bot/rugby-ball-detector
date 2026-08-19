@@ -9,7 +9,7 @@
 [Try the p5.js demo](https://davidchatting.com/rugby-ball-detector/) with images or video.
 
 A small YOLOv8 model for detecting rugby balls in photos and video, running entirely in the
-browser (no server, no upload) via ONNX Runtime Web and p5.js. It is trained on a small set of images, so not at production quality. The training photos are exclusivelky of **Gilbert** balls, and this may not generalise well to other brands.
+browser (no server, no upload) via ONNX Runtime Web and p5.js. It is trained on a small set of images, so not at production quality. The training photos are exclusively of **Gilbert** balls, and this may not generalise well to other brands.
 
 ## Use it in your own sketch
 
