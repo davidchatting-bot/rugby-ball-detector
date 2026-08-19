@@ -28,7 +28,7 @@ import requests
 
 HEADERS = {
     "User-Agent": "rugby-ball-detector-export/1.0 "
-    "(https://github.com/davidchatting-bot/rugby-ball-detector; contact via github) "
+    "(https://github.com/davidchatting/rugby-ball-detector; contact via github) "
     "python-requests"
 }
 
