@@ -2,7 +2,7 @@
 
 <!-- index.html/sketch.js/style.css/screenshot.png are synced from the p5.js editor sketch
      (package.json's homepage) by .github/workflows/build.yml on every push to master - don't
-     hand-edit them, they'll just get overwritten. See "Editing this demo" below. -->
+     hand-edit them, they'll just get overwritten. See "Syncing with the p5.js Editor" below. -->
 [![Screenshot of the demo detecting a rugby ball](screenshot.png)](https://editor.p5js.org/davidchatting/sketches/tCE7wAUM-)
 
 [https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Jonny_Wilkinson_kicking_a_penalty_(cropped).jpg](https://commons.wikimedia.org/wiki/File:ST_vs_RCT_2012_12_Jonny_Wilkinson_kicking_a_penalty_(cropped).jpg)
@@ -27,18 +27,20 @@ release tag so the URL won't change under you - run with
 input, output shape `[1, 5, 8400]` (`cx, cy, w, h, conf`, needs NMS). See
 [`sketch.js`](sketch.js) for a complete working example, including pre/post-processing.
 
-## Editing this demo
+## Syncing with the p5.js Editor
 
-`index.html` / `sketch.js` / `style.css` are maintained in the
-[p5.js editor](https://editor.p5js.org/davidchatting/sketches/tCE7wAUM-), not edited directly in
-this repo - [`build.yml`](.github/workflows/build.yml) downloads them via the editor's export
-API on every push to `master` and commits them here, alongside a fresh `screenshot.png`. The
-editor sketch to sync from is set in [`package.json`](package.json)'s `homepage` field.
+This repository automatically synchronises with the
+[p5.js editor](https://editor.p5js.org/davidchatting/sketches/tCE7wAUM-), where `index.html`,
+`sketch.js`, and `style.css` are maintained. Using the github workflows,
+[build.yml](.github/workflows/build.yml) automatically downloads the sketch's files via the
+editor's export API and commits them into the repo, along with a freshly regenerated
+`screenshot.png`. The reference for the p5.js sketch is held in the
+[package.json](package.json) `homepage` field.
 
 ## Contents
 
 - `index.html` / `style.css` / `sketch.js` - the browser demo (p5.js UI, `rugby-ball-detector.onnx`
-  run with `onnxruntime-web`), synced from the p5.js editor - see "Editing this demo" above
+  run with `onnxruntime-web`), synced from the p5.js editor - see "Syncing with the p5.js Editor" above
 - `rugby-ball-detector.onnx` / `rugby-ball-detector.pt` - the trained model weights (ONNX and
   PyTorch formats)
 - `screenshot.png` - a screenshot of the live demo, regenerated on every push by
